@@ -8,6 +8,10 @@
   --whiteColor: #fff;
   --fontFamily: "Poppins", sans-serif;
 }
+
+p {
+  color: var(--whiteColor);
+}
 .next {
   color: rgb(28, 29, 29);
   font-weight: 500;
@@ -257,9 +261,79 @@ body {
 }
 /* footer style*/
 
-#footer .footer-top {
+.footer-top {
   float: left;
   width: 100%;
-  background: #151516;
+  /* background: #151516; */
+  background: #59aa47;
   padding: 3em 0 2em;
+}
+.footer-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-blk {
+  float: left;
+  width: 100%;
+}
+
+#footer ul {
+}
+.menu-item {
+  padding: 2px 0;
+  text-decoration: none !important;
+  color: white; /* Set the color to white */
+  list-style-type: none; /* Remove the default bullet points */
+}
+
+#footer ul li {
+  padding: 2px 0;
+  text-decoration: none;
+  color: white; /* Set the color to white */
+  list-style-type: none; /* Remove the default bullet points */
+}
+
+#footer ul li::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 12px; /* Diameter of the circle */
+  height: 12px; /* Diameter of the circle */
+  border: 2px solid #d6d6d6; /* Color of the circle */
+  border-radius: 50%; /* To make a circle */
+  margin-right: 15px; /* Adjust spacing between circle and text */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+#footer .footer-top .footer-blk .form-control {
+  background: #4c4c4d;
+  border: none;
+  color: #b4b4b4;
+}
+
+#footer .footer-btn {
+  float: left;
+  width: 100%;
+  background: #000000;
+  padding: 1em 0;
+}
+#footer .footer-btn ul li a i {
+  background-color: #252526;
+  color: #9b9e9f;
+  border-radius: 50%; /* Use 50% to make a circle */
+  width: 20px; /* Adjust the width */
+  height: 20px; /* Adjust the height */
+  line-height: 20px; /* Adjust the line height */
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+#footer .footer-btn ul li {
+  display: inline-block;
+}
+#footer .footer-btm ul li a {
+  color: #9b9e9f;
 }
