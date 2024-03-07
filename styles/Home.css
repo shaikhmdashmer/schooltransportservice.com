@@ -1,25 +1,53 @@
 .carosalhome{
-    display:block;
-    width: 100%;
-    
+  display:block;
+  width: 100%;
+  
 }
 .carosalhome img{
 }
 .carousel-container {
-    position: relative;
-  }
-  
-  .carousel-item-content {
-    position: relative;
-   
-    display: flex; ;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  
-  .custom-carousel-button {
-    /* Your button styles */
-    /* background-color: blue; */
-  }
+  position: relative;
+}
+
+.carousel-item-content {
+  position: relative;
  
+  display: flex; ;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.custom-carousel-button {
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.custom-carousel-button.prev {
+  left: 0;
+  transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+.custom-carousel-button.next {
+  right: 0;
+  transform: translate(50%, -50%); /* Center horizontally */
+}
+.custom-carousel-button i {
+  color: white;
+
+}
+.custom-carousel-button:hover {
+  background-color: #4fc6ed;
+}

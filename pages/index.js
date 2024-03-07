@@ -1,11 +1,17 @@
+
 import Head from "next/head";
+import { Carousel } from "react-bootstrap";
 
-import { Carousel } from "bootstrap";
 
-export default function Home() {
+
+
+
+
+export default function index() {
+ 
   return (
     <>
-      <Head>
+   <Head>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
@@ -31,8 +37,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-  
+      <div>
       <div className="carousel-container">
       <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
         <Carousel.Item interval={10000}>
@@ -43,8 +48,11 @@ export default function Home() {
               alt="bg1"
             />
             <Carousel.Caption>
-              <h3>Heading 1</h3>
+              <div className="container">
+                <div className="col-sm-6">
+              <h3>Child Transportation Made Simple</h3>
               <p>Paragraph 1</p>
+              </div></div>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
@@ -76,20 +84,21 @@ export default function Home() {
         </Carousel.Item>
       </Carousel>
     </div>
+      </div>
     </>
   );
 }
-
 const PrevButton = (props) => (
   <button
-    className="custom-carousel-button prev"
-    onClick={props.onClick}
-  ><i className="fa fa-angle-left"></i></button>
-);
-
-const NextButton = (props) => (
-  <button
-    className="custom-carousel-button next"
-    onClick={props.onClick}
-  ><i className="fa fa-angle-right"></i></button>
-);
+     className="custom-carousel-button prev"
+      onClick={props.onClick}
+    ><i className="fa fa-angle-left"></i></button>
+  );
+  
+   const NextButton = (props) => (
+     <button
+       className="custom-carousel-button next"
+      onClick={props.onClick}
+   ><i className="fa fa-angle-left"></i></button>
+  );
+  

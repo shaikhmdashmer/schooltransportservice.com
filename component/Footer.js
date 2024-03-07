@@ -18,7 +18,7 @@ export default function Footer() {
         />
       </Head>
       <footer id="footer">
-        <h1>jhbhbhbh</h1>
+       
       </footer>
     </>
   );
