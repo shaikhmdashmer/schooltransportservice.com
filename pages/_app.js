@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.css";
+import "@/styles/Home.css";
+
 import Head from "next/head";
 import Layout from "@/component/Layout";
 

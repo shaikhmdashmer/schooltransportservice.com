@@ -1,0 +1,25 @@
+.carosalhome{
+    display:block;
+    width: 100%;
+    
+}
+.carosalhome img{
+}
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-item-content {
+    position: relative;
+   
+    display: flex; ;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .custom-carousel-button {
+    /* Your button styles */
+    /* background-color: blue; */
+  }
+ 
