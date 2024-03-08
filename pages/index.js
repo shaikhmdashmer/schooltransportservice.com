@@ -1,17 +1,10 @@
-
 import Head from "next/head";
 import { Carousel } from "react-bootstrap";
 
-
-
-
-
-
 export default function index() {
- 
   return (
     <>
-   <Head>
+      <Head>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
@@ -357,16 +350,13 @@ it is a repetitive trip and set the start and end dates.</p>
   );
 }
 const PrevButton = (props) => (
-  <button
-     className="custom-carousel-button prev"
-      onClick={props.onClick}
-    ><i className="fa fa-angle-left"></i></button>
-  );
-  
-   const NextButton = (props) => (
-     <button
-       className="custom-carousel-button next"
-      onClick={props.onClick}
-   ><i className="fa fa-angle-left"></i></button>
-  );
-  
+  <button className="custom-carousel-button prev" onClick={props.onClick}>
+    <i className="fa fa-angle-left"></i>
+  </button>
+);
+
+const NextButton = (props) => (
+  <button className="custom-carousel-button next" onClick={props.onClick}>
+    <i className="fa fa-angle-left"></i>
+  </button>
+);
