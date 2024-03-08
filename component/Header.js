@@ -44,17 +44,13 @@ export default function Header() {
       <div className="headermain">
         <div className="brandLogo">
           <Link href="/">
-            <img src="/Images/logo.png" height="70" width="350" alt="logo" />
+            <img src="/Images/logo.png" className="imgclss" alt="logo" />
           </Link>
         </div>
 
         <div className="drawerToggle" onClick={toggleDrawer}>
           <i className="material-icons">menu</i>
         </div>
-        {/* <div
-          className={`drawer ${isDrawerOpen ? "open" : ""}`}
-          onClick={toggleDrawer}
-        > */}
 
         <div ref={drawerRef} className={`drawer ${isDrawerOpen ? "open" : ""}`}>
           <div className="drawerContent">
