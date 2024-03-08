@@ -34,7 +34,7 @@ body {
 
 /* Header Styles */
 .headermain {
-  padding: 10px 40px;
+  padding: 20px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -50,15 +50,9 @@ body {
   background-color: transparent;
 }
 
-.headermain .LinkBox a {
-  text-decoration: none;
-  color: rgba(13, 107, 176, 1);
-  font-size: 22px;
-  margin-right: 40px;
-  font-family: "Roboto Flex", sans-serif;
-  &:last-child {
-    margin-right: 0px;
-  }
+.imgclss {
+  height: 70;
+  width: 350;
 }
 .drawerToggle {
   color: #fff;
@@ -163,109 +157,13 @@ body {
 }
 /* Responsive Header Styles */
 
-@media (max-width: 991px) {
-  .headermain {
-    padding: 10px 60px;
-  }
-  .headermain .LinkBox a {
-    font-size: 18px;
-    margin-right: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .headermain {
-    padding: 10px;
-  }
-  .headermain .LinkBox a {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-}
-
-/* Footer styles */
-.footer {
-  width: 100%;
-}
-
-.box,
-.servicesBox {
-  flex: 1;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 800;
-  color: #ffffff;
-  padding: 0 90px; /* Add left and right padding */
-  box-sizing: border-box; /* Include padding in the width calculation */
-}
-.servicesBox p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.servicesBox p:last-child {
-  overflow: visible;
-  white-space: initial;
-  text-overflow: initial;
-}
-
-.innerCard {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.addressBox {
-  font-size: 22px;
-  font-weight: 800;
-
-  /* Example background color */
-}
-
-.servicesBox {
-  flex: 1;
-
-  text-align: center;
-}
-
-.serTxt {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.customLink {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-
-  text-decoration-line: none;
-}
-.ch2 {
-  color: #fff;
-  font-size: 18px;
-  text-decoration-line: none;
-  font-weight: 300;
-}
-@media (max-width: 991px) {
-  .servicesBox {
-    margin-bottom: 20px;
-  }
-}
 /* footer style*/
 
 .footer-top {
   float: left;
   width: 100%;
-  /* background: #151516; */
-  background: #59aa47;
+  background: #151516;
+
   padding: 3em 0 2em;
 }
 .footer-container {
@@ -281,6 +179,11 @@ body {
 }
 
 #footer ul {
+  text-decoration: none !important;
+}
+.footer-blk h2 ul li a {
+  text-decoration: none !important;
+  color: #59aa47;
 }
 .menu-item {
   padding: 2px 0;
@@ -288,10 +191,14 @@ body {
   color: white; /* Set the color to white */
   list-style-type: none; /* Remove the default bullet points */
 }
-
+a {
+  text-decoration: none !important;
+  color: var(--whiteColor);
+}
 #footer ul li {
   padding: 2px 0;
-  text-decoration: none;
+  font-size: 12px;
+  text-decoration: none !important;
   color: white; /* Set the color to white */
   list-style-type: none; /* Remove the default bullet points */
 }
@@ -303,7 +210,7 @@ body {
   height: 12px; /* Diameter of the circle */
   border: 2px solid #d6d6d6; /* Color of the circle */
   border-radius: 50%; /* To make a circle */
-  margin-right: 15px; /* Adjust spacing between circle and text */
+  margin-right: 10px; /* Adjust spacing between circle and text */
 }
 
 .form-group {
@@ -312,9 +219,12 @@ body {
 #footer .footer-top .footer-blk .form-control {
   background: #4c4c4d;
   border: none;
-  color: #b4b4b4;
+  border-radius: 0px;
 }
-
+.form-control::placeholder {
+  color: #999; /* Placeholder text color */
+  font-weight: 400; /* Placeholder font weight */
+}
 #footer .footer-btn {
   float: left;
   width: 100%;
@@ -336,4 +246,37 @@ body {
 }
 #footer .footer-btm ul li a {
   color: #9b9e9f;
+}
+
+.footerh2 {
+  color: var(--whiteColor);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+@media (max-width: 767px) {
+  #footer .footer-top .footer-blk .footerh2 {
+    margin: 0 0 16px 0;
+    background-color: #22c1e6;
+  }
+
+  .container {
+  }
+
+  .footer-container {
+    background-color: #000000;
+  }
+}
+@media screen and (max-width: 375px) {
+  .imgclss {
+    height: 40px;
+    width: 190px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1dffffdfdf {
+    font-size: 28px !important;
+  }
 }
