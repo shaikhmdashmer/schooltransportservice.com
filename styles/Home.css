@@ -2,10 +2,13 @@
   --primaryColor: #4fc6ed;
   --secondaryColor: #8b8e8f;
   --bgColorPrimary: #59aa47;
-  --bgColorSecondary: #5c5856;
+  --bgColorSecondary: #58585a;
+  --blueColor:#3ebae8;
   --whiteColor: #fff;
   --fontFamily: "Poppins", sans-serif;
 }
+/* ------section1--------- */
+
   .carosalhome{
   display:block;
   width: 100%;
@@ -66,6 +69,7 @@
   line-height: 1em;
   font-weight: bold;
 font-family: 'josefin_sansregular';
+margin-bottom: 17px;
 }
 .txt{
   font-size:21px;
@@ -107,8 +111,160 @@ font-family: 'josefin_sansregular';
 .bar {
   border-radius: 5px;
 } */
-@media (max-width: 576px) {
+
+
+.carouseltitle{
+  left: 90px;
+  position:absolute;
+  top:50px;
+   
+}
+/* ------section2--------- */
+.sectiontwo{
  
+    float: left;
+    width: 100%;
+    padding: 3em 0;
+    background-color: var(--whiteColor);
+
+}
+.sectiontittle{
+    font-size: 22px;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      font-family: 'josefin_sansregular';
+}
+/* ------section3--------- */
+
+
+/* Add your CSS styles here */
+/* Example styles for the section */
+.sectionthree {
+  padding: 60px 0;
+}
+.dark-patten {
+  background-image:url("../public/Images/asfalt_dark_patten.png");
+background-repeat:repeat;
+background-size: cover;
+background-position: center;
+}
+
+.backgrd {
+  background-color: #f4f4f4;
+  
+}
+.sectionthree .heading {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  color:var(--bgColorSecondary);
+  
+}
+
+.headingtittle {
+  font-size: 33px;
+  margin-bottom: 30px;
+  color:var(--bgColorSecondary);
+  font-weight: bold;
+  font-family: 'josefin_sansregular';
+
+ 
+}
+
+.hd-borde {
+
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 1em 0 0 0;
+
+}
+.hd-borde:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: 1px;
+  background: #c7c7c7;
+}
+.hd-borde:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  border: 1px solid #c7c7c7;
+  border-radius: 20px;
+  background: #f9f9f9;
+}
+
+
+.box {
+  display: flex;
+  padding: 10px; /* Add padding to the box */
+  width: 100%;
+}
+
+
+
+.media.box {
+  display: flex;
+  align-items: start; 
+    margin: 25px 0px;
+
+
+}
+
+.pull-left {
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+.pull-left i {
+  font-size: 22px;
+  color: var(--blueColor);
+  margin-right: 10px;
+}
+
+.media-heading {
+  margin-bottom: 5px;
+  color: #58585a;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: start;
+  font-family: 'josefin_sansregular';
+}
+
+.txttittle {
+  color: #171717;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0; /* Remove default margin for paragraphs */
+  text-align: start;
+  font-family: 'josefin_sansregular';
+}
+
+
+@media (max-width: 767px) {
+  .carouseltitle{
+    left: 5px;
+    top:15px;
+  }
+  .titile{
+    font-size: 20px;
+    line-height: 20px;
+  
+  }
+  .custom-carousel-button {
+    visibility: hidden;
+  }
 }
 
 /* Media query for medium devices (e.g., tablets) */

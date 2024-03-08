@@ -47,12 +47,15 @@ export default function index() {
       src="/Images/bgone.jpg"
       alt="bg1"
     />
-    <Carousel.Caption className="position-absolute top-50 translate-middle-y">
+   
+    <Carousel.Caption className="carouseltitle">
       <div className="container">
         <div className="row">
           <div className="col-sm-8 text-start">
             <h2 className="titile">Start Earning with School Transport Services!</h2>
             <p className="txt"> Private cab owners can list as a driver with School Transport services and start earning for each safe ride you make.</p>
+
+          
             <a className="btn btn-primary btn-lg" href="">Read More</a>
           </div>
         </div>
@@ -73,13 +76,16 @@ export default function index() {
               src="/Images/bgtwo.jpg"
               alt="bg2"
             />
-              <Carousel.Caption className="position-absolute top-50 translate-middle-y">
+            
+    <Carousel.Caption className=" carouseltitle">
       <div className="container">
-        <div className="row">
+        <div className="row ">
           <div className="col-sm-8 text-start">
             <h2 className="titile">Child Transportation Made Simple</h2>
             <p className="txt"> Is transporting your child to specific destinations safely a major concern for you? If yes, worry no more!</p>
             <p className="txt">School Transport Services provides you a convenient mobile app solution</p>
+
+          
             <a className="btn btn-primary btn-lg" href="">Read More</a>
           </div>
         </div>
@@ -87,18 +93,18 @@ export default function index() {
     </Carousel.Caption>
           </div>
         </Carousel.Item>
-        <Carousel.Item interval={5000}>
+        <Carousel.Item interval={115000}>
           <div className="carousel-item-content">
             <img
               className="carosalhome"
               src="/Images/bgthree.jpg"
               alt="bg3"
             />
-            <Carousel.Caption className="position-absolute top-50 translate-middle-y">
-      <div className="container bg-primary">
-        <div className="row bg-primary">
-          <div className="col-sm-8 text-start bg-primary">
-            <h2 className="titile bg-danger">Lend a helping hand to Fellow Parents!</h2>
+            <Carousel.Caption className="carouseltitle">
+      <div className="container">
+        <div className="row ">
+          <div className="col-sm-8 text-start">
+            <h2 className="titile">Lend a helping hand to Fellow Parents!</h2>
             <p className="txt"> Carpooling with fellow parents can be a great way to ensure your child is safe. It not only ensures safety,
 but can also gain a friend for you.</p>
           
@@ -111,6 +117,127 @@ but can also gain a friend for you.</p>
         </Carousel.Item>
       </Carousel>
     </div>
+    <div className="sectiontwo">
+<div className="container">
+  <div className="row"> 
+  <div className="col-sm-9 w-75">
+    <h3 className="sectiontittle">
+    Start transporting your child safely to any destination from anywhere while monitoring their rela time location!
+    </h3>
+  </div>
+  <div class="col-sm-3 text-center mngtop30">
+<a class="btn btn-primary btn-lg" href="">Download Now!</a>
+</div>
+  </div>
+</div>
+    </div>
+    <div className=" dark-patten backgrd">
+      <div className="container sectionthree">
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="heading py-5 text-center ">
+              <h2 className="headingtittle">Why Ride with School Transport Services</h2>
+              <div className="hd-borde"></div>
+            </div>
+         
+          <div className="box">
+  <div className="col-md-4 col-sm-4">
+    <div className="media box row">
+      <div className="pull-left">
+        <i className="fa fa-child"></i>
+        <h3 className="media-heading">Exclusive Services for Children/Students</h3>
+
+      </div>
+      
+    <p className="txttittle">Unlike generic taxi rental applications, School Transport services are focused only on providing safe transportation of students.</p>
+
+    
+    </div>
+    
+  </div>
+  <div className="col-md-4 col-sm-4">
+    <div className="media box bg-info row">
+      <div className="pull-left">
+      <i class="fa fa-shield"></i>        
+      <h3 className="media-heading">Safe and Secure</h3>
+
+      </div>
+      
+    <p className="txttittle">STS has a strict process and a unique set of features which ensure a high level of
+safety and security for each child’s transportation.</p>
+
+    
+    </div>
+    
+  </div>
+  <div className="col-md-4 col-sm-4">
+    <div className="media box row">
+      <div className="pull-left">
+      <i class="fa fa-exclamation-triangle"></i>
+        <h3 className="media-heading">Speed Limits and Alerts</h3>
+
+      </div>
+      
+    <p className="txttittle">Know if the private cab or vehicle is exceeding speed limits you set. There are
+also alerts for sudden acceleration, unwanted stops, etc</p>
+
+    
+    </div>
+    
+  </div>
+</div>
+<div className="box">
+  <div className="col-md-4 col-sm-4">
+    <div className="media box row">
+      <div className="pull-left">
+        <i className="fa fa-child"></i>
+        <h3 className="media-heading">Exclusive Services for Children/Students</h3>
+
+      </div>
+      
+    <p className="txttittle">Unlike generic taxi rental applications, School Transport services are focused only on providing safe transportation of students.</p>
+
+    
+    </div>
+    
+  </div>
+  <div className="col-md-4 col-sm-4 ">
+    <div className="media box row">
+      <div className="pull-left">
+      <i class="fa fa-shield"></i>        
+      <h3 className="media-heading">Safe and Secure</h3>
+
+      </div>
+      
+    <p className="txttittle">STS has a strict process and a unique set of features which ensure a high level of
+safety and security for each child’s transportation.</p>
+
+    
+    </div>
+    
+  </div>
+  <div className="col-md-4 col-sm-4">
+    <div className="media box row">
+      <div className="pull-left">
+      <i class="fa fa-exclamation-triangle"></i>
+        <h3 className="media-heading">Speed Limits and Alerts</h3>
+
+      </div>
+      
+    <p className="txttittle">Know if the private cab or vehicle is exceeding speed limits you set. There are
+also alerts for sudden acceleration, unwanted stops, etc</p>
+
+    
+    </div>
+    
+  </div>
+</div>
+</div>
+        
+        </div>
+      </div>
+    </div>
+  
       </div>
     </>
   );
