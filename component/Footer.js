@@ -23,11 +23,11 @@ export default function Footer() {
       </Head>
       <footer id="footer">
         <div className="footer-top">
-          <div className="container footer-container ">
+          <div className="  container-md  footer-container ">
             <div className="row">
               <div className="col-sm-3">
                 <div className="footer-blk">
-                  <h2>Using School Transport Services</h2>
+                  <h2 className="footerh2">Using School Transport Services</h2>
 
                   <ul>
                     <li>
@@ -42,6 +42,7 @@ export default function Footer() {
 
               <div className="col-sm-3">
                 <div className="footer-blk">
+                  <h2 className="footerh2">Our company</h2>
                   <ul>
                     <li>
                       <a href="https://www.schooltransportservice.com/features">
@@ -54,22 +55,19 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                  <h2>Our company</h2>
                 </div>
               </div>
 
               <div className="col-sm-3">
                 <div className="footer-blk">
-                  <h2>Legal</h2>
+                  <h2 className="footerh2">Legal</h2>
 
                   <ul>
                     <li>
                       <a href="#">Terms &amp; Conditions</a>
                     </li>
                     <li>
-                      <a href="https://www.schooltransportservice.com/privacy-policy">
-                        Privacy policy
-                      </a>
+                      <a href="/privacy-policy">Privacy policy</a>
                     </li>
                   </ul>
                 </div>
@@ -77,7 +75,7 @@ export default function Footer() {
 
               <div className="col-sm-3">
                 <div className="footer-blk">
-                  <h2>Language</h2>
+                  <h2 className="footerh2">Language</h2>
 
                   <form>
                     <div className="form-group">
@@ -95,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className=" footer-btn">
-          <div className="container">
+          <div className="container-md  ">
             <div className="row">
               <div className="col-sm-6">
                 <p>
