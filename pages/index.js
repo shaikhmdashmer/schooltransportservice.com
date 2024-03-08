@@ -1,17 +1,10 @@
-
 import Head from "next/head";
 import { Carousel } from "react-bootstrap";
 
-
-
-
-
-
 export default function index() {
- 
   return (
     <>
-   <Head>
+      <Head>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
@@ -38,67 +31,69 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <div className="carousel-container">
-      <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
-        <Carousel.Item interval={10000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgone.jpg"
-              alt="bg1"
-            />
-            <Carousel.Caption>
-              <div className="container">
-                <div className="col-sm-6">
-              <h3>Child Transportation Made Simple</h3>
-              <p>Paragraph 1</p>
-              </div></div>
-            </Carousel.Caption>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgtwo.jpg"
-              alt="bg2"
-            />
-            <Carousel.Caption>
-              <h3>Heading 2</h3>
-              <p>Paragraph 2</p>
-            </Carousel.Caption>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgthree.jpg"
-              alt="bg3"
-            />
-            <Carousel.Caption>
-              <h3>Heading 3</h3>
-              <p>Paragraph 3</p>
-            </Carousel.Caption>
-          </div>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+        <div className="carousel-container">
+          <Carousel
+            indicators={false}
+            prevIcon={<PrevButton />}
+            nextIcon={<NextButton />}
+          >
+            <Carousel.Item interval={10000}>
+              <div className="carousel-item-content">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgone.jpg"
+                  alt="bg1"
+                />
+                <Carousel.Caption>
+                  <div className="container">
+                    <div className="col-sm-6">
+                      <h3>Child Transportation Made Simple</h3>
+                      <p>Paragraph 1</p>
+                    </div>
+                  </div>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+              <div className="carousel-item-content">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgtwo.jpg"
+                  alt="bg2"
+                />
+                <Carousel.Caption>
+                  <h3>Heading 2</h3>
+                  <p>Paragraph 2</p>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item interval={5000}>
+              <div className="carousel-item-content">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgthree.jpg"
+                  alt="bg3"
+                />
+                <Carousel.Caption>
+                  <h3>Heading 3</h3>
+                  <p>Paragraph 3</p>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </div>
     </>
   );
 }
 const PrevButton = (props) => (
-  <button
-     className="custom-carousel-button prev"
-      onClick={props.onClick}
-    ><i className="fa fa-angle-left"></i></button>
-  );
-  
-   const NextButton = (props) => (
-     <button
-       className="custom-carousel-button next"
-      onClick={props.onClick}
-   ><i className="fa fa-angle-left"></i></button>
-  );
-  
+  <button className="custom-carousel-button prev" onClick={props.onClick}>
+    <i className="fa fa-angle-left"></i>
+  </button>
+);
+
+const NextButton = (props) => (
+  <button className="custom-carousel-button next" onClick={props.onClick}>
+    <i className="fa fa-angle-left"></i>
+  </button>
+);
