@@ -1,20 +1,30 @@
-.carosalhome{
+:root {
+  --primaryColor: #4fc6ed;
+  --secondaryColor: #8b8e8f;
+  --bgColorPrimary: #59aa47;
+  --bgColorSecondary: #5c5856;
+  --whiteColor: #fff;
+  --fontFamily: "Poppins", sans-serif;
+}
+  .carosalhome{
   display:block;
   width: 100%;
-  
+  opacity: 1;
+ 
 }
-.carosalhome img{
-}
+
 .carousel-container {
   position: relative;
+
 }
 
 .carousel-item-content {
   position: relative;
  
   display: flex; ;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  width:100%;
  
 }
 
@@ -49,5 +59,64 @@
 
 }
 .custom-carousel-button:hover {
-  background-color: #4fc6ed;
+  background-color:var(--primaryColor);
+}
+.titile{
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: bold;
+font-family: 'josefin_sansregular';
+}
+.txt{
+  font-size:21px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+.btn {
+  display: inline-block;
+ 
+  margin-bottom: 0;
+  
+  font-weight: normal;
+  
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+ 
+  user-select: none;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 0px;
+  background-color:var(--primaryColor);
+  border-color:var(--primaryColor);
+}
+.btn-lg:hover{
+  background-color: #428bca;
+}
+/* .progressBar {
+  height: 10px;
+  background-color: #59aa47;
+}
+
+.bar {
+  border-radius: 5px;
+} */
+@media (max-width: 576px) {
+ 
+}
+
+/* Media query for medium devices (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}
+
+/* Media query for large devices (e.g., desktops) */
+@media (min-width: 992px) {
+ 
 }

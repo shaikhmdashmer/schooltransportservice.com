@@ -40,22 +40,32 @@ export default function index() {
       <div>
       <div className="carousel-container">
       <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
-        <Carousel.Item interval={10000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgone.jpg"
-              alt="bg1"
-            />
-            <Carousel.Caption>
-              <div className="container">
-                <div className="col-sm-6">
-              <h3>Child Transportation Made Simple</h3>
-              <p>Paragraph 1</p>
-              </div></div>
-            </Carousel.Caption>
+      <Carousel.Item interval={10000}>
+  <div className="carousel-item-content position-relative">
+    <img
+      className="carosalhome"
+      src="/Images/bgone.jpg"
+      alt="bg1"
+    />
+    <Carousel.Caption className="position-absolute top-50 translate-middle-y">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-8 text-start">
+            <h2 className="titile">Start Earning with School Transport Services!</h2>
+            <p className="txt"> Private cab owners can list as a driver with School Transport services and start earning for each safe ride you make.</p>
+            <a className="btn btn-primary btn-lg" href="">Read More</a>
           </div>
-        </Carousel.Item>
+        </div>
+      </div>
+    </Carousel.Caption>
+    {/* <div id="progressBar" className="progress">
+      <div id="bar" className="progress-bar bg-success" style={{ width: '57.7143%' }}></div>
+    </div> */}
+  </div>
+</Carousel.Item>
+
+
+
         <Carousel.Item interval={2000}>
           <div className="carousel-item-content">
             <img
@@ -63,10 +73,18 @@ export default function index() {
               src="/Images/bgtwo.jpg"
               alt="bg2"
             />
-            <Carousel.Caption>
-              <h3>Heading 2</h3>
-              <p>Paragraph 2</p>
-            </Carousel.Caption>
+              <Carousel.Caption className="position-absolute top-50 translate-middle-y">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-8 text-start">
+            <h2 className="titile">Child Transportation Made Simple</h2>
+            <p className="txt"> Is transporting your child to specific destinations safely a major concern for you? If yes, worry no more!</p>
+            <p className="txt">School Transport Services provides you a convenient mobile app solution</p>
+            <a className="btn btn-primary btn-lg" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </Carousel.Caption>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -76,10 +94,19 @@ export default function index() {
               src="/Images/bgthree.jpg"
               alt="bg3"
             />
-            <Carousel.Caption>
-              <h3>Heading 3</h3>
-              <p>Paragraph 3</p>
-            </Carousel.Caption>
+            <Carousel.Caption className="position-absolute top-50 translate-middle-y">
+      <div className="container bg-primary">
+        <div className="row bg-primary">
+          <div className="col-sm-8 text-start bg-primary">
+            <h2 className="titile bg-danger">Lend a helping hand to Fellow Parents!</h2>
+            <p className="txt"> Carpooling with fellow parents can be a great way to ensure your child is safe. It not only ensures safety,
+but can also gain a friend for you.</p>
+          
+            <a className="btn btn-primary btn-lg" href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </Carousel.Caption>
           </div>
         </Carousel.Item>
       </Carousel>
