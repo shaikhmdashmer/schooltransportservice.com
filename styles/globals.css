@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
   --primaryColor: #59aa47;
@@ -6,7 +7,8 @@
   --bgColorPrimary: #59aa47;
   --bgColorSecondary: #5c5856;
   --whiteColor: #fff;
-  --fontFamily: "Poppins", sans-serif;
+  --font-familySan: "Josefin Sans Regular", sans-serif;
+  --font-family: "Josefin Sans Regular";
 }
 
 p {
@@ -196,6 +198,7 @@ a {
   color: var(--whiteColor);
 }
 #footer ul li {
+  font-family: var(--font-family);
   padding: 2px 0;
   font-size: 12px;
   text-decoration: none !important;
@@ -253,6 +256,13 @@ a {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 20px 0;
+  font-family: var(--font-family);
+}
+
+.copy {
+  color: var(--whiteColor);
+  font-size: 20px;
+  font-family: var(--font-family);
 }
 
 @media (max-width: 767px) {
@@ -268,10 +278,15 @@ a {
     background-color: #000000;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .imgclss {
     height: 40px;
     width: 190px;
+  }
+  .copy {
+    color: var(--whiteColor);
+    font-size: 15px;
+    font-family: var(--font-family);
   }
 }
 
