@@ -1,5 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 import Head from "next/head";
+import { FaGooglePlusG } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -23,7 +24,7 @@ export default function Footer() {
       </Head>
       <footer id="footer">
         <div className="footer-top">
-          <div className="  container-md  footer-container ">
+          <div className="  container  footer-container ">
             <div className="row">
               <div className="col-sm-3">
                 <div className="footer-blk">
@@ -45,14 +46,10 @@ export default function Footer() {
                   <h2 className="footerh2">Our company</h2>
                   <ul>
                     <li>
-                      <a href="https://www.schooltransportservice.com/features">
-                        Our Features
-                      </a>
+                      <a href="/features">Our Features</a>
                     </li>
                     <li>
-                      <a href="https://www.schooltransportservice.com/contact-us">
-                        Contact
-                      </a>
+                      <a href="/contact-us">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -96,7 +93,7 @@ export default function Footer() {
           <div className="container-md  ">
             <div className="row">
               <div className="col-sm-6">
-                <p>
+                <p className="copy">
                   Copyright 2017 School Transport Services. All Rights Reserved.
                 </p>
               </div>
@@ -115,6 +112,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="#">
+                      <FaGooglePlusG />
                       <i className="fa fa-googe-plus"></i>
                       <i className="fa fa-google-plus" aria-hidden="true"></i>
                     </a>
