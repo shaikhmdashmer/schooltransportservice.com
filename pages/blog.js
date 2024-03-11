@@ -5,7 +5,7 @@ const blog = () => {
     <section className="blogWrap">
       <section className="blogBgWrap">
         <div className="bgImgWrap">
-          <img src="https://www.schooltransportservice.com/wp-content/themes/STS-Theme/images/blog_img.jpg" />
+          <img src="/Images/blog_img.jpg" />
           <div className="container">
             <h2>Blog</h2>
           </div>
@@ -19,7 +19,7 @@ const blog = () => {
                 <div className="col-md-4 col-sm-4">
                   <div className="blockSx">
                     <a href="/blogs/new-blog/">
-                      <img src="https://www.schooltransportservice.com/wp-content/uploads/2017/08/blog1.jpg" />
+                      <img src="/Images/blog1.jpg" />
                     </a>
                     <div className="blockInfoSx">
                       <h2>
