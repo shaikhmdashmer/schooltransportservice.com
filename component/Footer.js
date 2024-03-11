@@ -1,5 +1,7 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 import Head from "next/head";
+import { FaFacebookF } from "react-icons/fa";
+import { CiTwitter } from "react-icons/ci";
 import { FaGooglePlusG } from "react-icons/fa";
 
 export default function Footer() {
@@ -90,33 +92,31 @@ export default function Footer() {
         </div>
 
         <div className=" footer-btn">
-          <div className="container-md  ">
+          <div className="container-md">
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-sm-8 txt-cntr">
                 <p className="copy">
                   Copyright 2017 School Transport Services. All Rights Reserved.
                 </p>
               </div>
 
-              <div class="col-sm-6">
+              <div class="col-sm-4 icon-cntr">
                 <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FaGooglePlusG />
-                      <i className="fa fa-googe-plus"></i>
-                      <i className="fa fa-google-plus" aria-hidden="true"></i>
-                    </a>
-                  </li>
+                  <a href="#">
+                    <i>
+                      <FaFacebookF className="icon-style" />
+                    </i>
+                  </a>
+                  <a href="#">
+                    <i>
+                      <CiTwitter className="icon-style" />
+                    </i>
+                  </a>
+                  <a href="#">
+                    <i>
+                      <FaGooglePlusG className="icon-style" />
+                    </i>
+                  </a>
                 </ul>
               </div>
             </div>

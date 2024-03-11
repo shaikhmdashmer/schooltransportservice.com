@@ -31,206 +31,237 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <div className="carousel-container">
-      <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
-      <Carousel.Item interval={10000}>
-  <div className="carousel-item-content position-relative">
-    <img
-      className="carosalhome"
-      src="/Images/bgone.jpg"
-      alt="bg1"
-    />
-   
-    <Carousel.Caption className="carouseltitle">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-8 text-start">
-            <h2 className="titile">Start Earning with School Transport Services!</h2>
-            <p className="txt"> Private cab owners can list as a driver with School Transport services and start earning for each safe ride you make.</p>
+        <div className="carousel-container">
+          <Carousel
+            indicators={false}
+            prevIcon={<PrevButton />}
+            nextIcon={<NextButton />}
+          >
+            <Carousel.Item interval={10000}>
+              <div className="carousel-item-content position-relative">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgone.jpg"
+                  alt="bg1"
+                />
 
-          
-            <a className="btn btn-primary btn-lg" href="">Read More</a>
-          </div>
-        </div>
-      </div>
-    </Carousel.Caption>
-    {/* <div id="progressBar" className="progress">
+                <Carousel.Caption className="carouseltitle">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-sm-8 text-start">
+                        <h2 className="titile">
+                          Start Earning with School Transport Services!
+                        </h2>
+                        <p className="txt">
+                          {" "}
+                          Private cab owners can list as a driver with School
+                          Transport services and start earning for each safe
+                          ride you make.
+                        </p>
+
+                        <a className="btn btn-primary btn-lg" href="">
+                          Read More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Caption>
+                {/* <div id="progressBar" className="progress">
       <div id="bar" className="progress-bar bg-success" style={{ width: '57.7143%' }}></div>
     </div> */}
-  </div>
-</Carousel.Item>
+              </div>
+            </Carousel.Item>
 
+            <Carousel.Item interval={2000}>
+              <div className="carousel-item-content">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgtwo.jpg"
+                  alt="bg2"
+                />
 
+                <Carousel.Caption className=" carouseltitle">
+                  <div className="container">
+                    <div className="row ">
+                      <div className="col-sm-8 text-start">
+                        <h2 className="titile">
+                          Child Transportation Made Simple
+                        </h2>
+                        <p className="txt">
+                          {" "}
+                          Is transporting your child to specific destinations
+                          safely a major concern for you? If yes, worry no more!
+                        </p>
+                        <p className="txt">
+                          School Transport Services provides you a convenient
+                          mobile app solution
+                        </p>
 
-        <Carousel.Item interval={2000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgtwo.jpg"
-              alt="bg2"
-            />
-            
-    <Carousel.Caption className=" carouseltitle">
-      <div className="container">
-        <div className="row ">
-          <div className="col-sm-8 text-start">
-            <h2 className="titile">Child Transportation Made Simple</h2>
-            <p className="txt"> Is transporting your child to specific destinations safely a major concern for you? If yes, worry no more!</p>
-            <p className="txt">School Transport Services provides you a convenient mobile app solution</p>
+                        <a className="btn btn-primary btn-lg" href="">
+                          Read More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item interval={115000}>
+              <div className="carousel-item-content">
+                <img
+                  className="carosalhome"
+                  src="/Images/bgthree.jpg"
+                  alt="bg3"
+                />
+                <Carousel.Caption className="carouseltitle">
+                  <div className="container">
+                    <div className="row ">
+                      <div className="col-sm-8 text-start">
+                        <h2 className="titile">
+                          Lend a helping hand to Fellow Parents!
+                        </h2>
+                        <p className="txt">
+                          {" "}
+                          Carpooling with fellow parents can be a great way to
+                          ensure your child is safe. It not only ensures safety,
+                          but can also gain a friend for you.
+                        </p>
 
-          
-            <a className="btn btn-primary btn-lg" href="">Read More</a>
+                        <a className="btn btn-primary btn-lg" href="">
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+        <div className="sectiontwo">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-9 w-75">
+                <h3 className="sectiontittle">
+                  Start transporting your child safely to any destination from
+                  anywhere while monitoring their rela time location!
+                </h3>
+              </div>
+              <div class="col-sm-3 text-center mngtop30">
+                <a class="btn btn-primary btn-lg" href="">
+                  Download Now!
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </Carousel.Caption>
+        <section className="sectionthree dark-img  backgrd">
+          <div className="container">
+            <div className="row">
+              <div className="heading text-center ">
+                <div className="col-sm-12">
+                  <h2 className="headingtittle">
+                    Why Ride with School Transport Services
+                  </h2>
+                  <div className="hd-borde"></div>
+                </div>
+              </div>
+
+              <div className="col-md-4 col-sm-4">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i className="fa fa-child"></i>
+                    <h3 className="media-heading">
+                      Exclusive Services for Children/Students
+                    </h3>
+                  </div>
+
+                  <p className="txttittle">
+                    Unlike generic taxi rental applications, School Transport
+                    services are focused only on providing safe transportation
+                    of students.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-4">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i class="fa fa-shield"></i>
+                    <h3 className="media-heading">Safe and Secure</h3>
+                  </div>
+
+                  <p className="txttittle">
+                    STS has a strict process and a unique set of features which
+                    ensure a high level of safety and security for each child’s
+                    transportation.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-4">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <h3 className="media-heading">Speed Limits and Alerts</h3>
+                  </div>
+
+                  <p className="txttittle">
+                    Know if the private cab or vehicle is exceeding speed limits
+                    you set. There are also alerts for sudden acceleration,
+                    unwanted stops, etc
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-4 col-sm-4">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i class="fa fa-tag"></i>
+                    <h3 className="media-heading">
+                      Transparent, Upfront Pricing
+                    </h3>
+                  </div>
+
+                  <p className="txttittle">
+                    The estimated prices mentioned in the app would be more or
+                    less the final charge, and there are no hidden costs
+                    involved.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-4 ">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i class="fa fa-bus"></i>{" "}
+                    <h3 className="media-heading">One Way Trips/Round Trips</h3>
+                  </div>
+
+                  <p className="txttittle">
+                    Parents can choose if the transport service needs to be
+                    availed for one- way only or for a complete round trip.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-4">
+                <div className="media box row">
+                  <div className="pull-left">
+                    <i class="fa fa-calendar"></i>{" "}
+                    <h3 className="media-heading">
+                      Select Transportation Schedule
+                    </h3>
+                  </div>
+
+                  <p className="txttittle">
+                    Select the days of a week you want to avail transport for
+                    your child if it is a repetitive trip and set the start and
+                    end dates.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </Carousel.Item>
-        <Carousel.Item interval={115000}>
-          <div className="carousel-item-content">
-            <img
-              className="carosalhome"
-              src="/Images/bgthree.jpg"
-              alt="bg3"
-            />
-            <Carousel.Caption className="carouseltitle">
-      <div className="container">
-        <div className="row ">
-          <div className="col-sm-8 text-start">
-            <h2 className="titile">Lend a helping hand to Fellow Parents!</h2>
-            <p className="txt"> Carpooling with fellow parents can be a great way to ensure your child is safe. It not only ensures safety,
-but can also gain a friend for you.</p>
-          
-            <a className="btn btn-primary btn-lg" href="">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </Carousel.Caption>
-          </div>
-        </Carousel.Item>
-      </Carousel>
-    </div>
-    <div className="sectiontwo">
-<div className="container">
-  <div className="row"> 
-  <div className="col-sm-9 w-75">
-    <h3 className="sectiontittle">
-    Start transporting your child safely to any destination from anywhere while monitoring their rela time location!
-    </h3>
-  </div>
-  <div class="col-sm-3 text-center mngtop30">
-<a class="btn btn-primary btn-lg" href="">Download Now!</a>
-</div>
-  </div>
-</div>
-    </div>
-    <section className="sectionthree dark-img  backgrd">
-      <div className="container">
-        <div className="row">
-            <div className="heading text-center ">
-            <div className="col-sm-12">
-              <h2 className="headingtittle">Why Ride with School Transport Services</h2>
-              <div className="hd-borde"></div>
-            </div></div>
-         
-        
-  <div className="col-md-4 col-sm-4">
-    <div className="media box row">
-      <div className="pull-left">
-        <i className="fa fa-child"></i>
-        <h3 className="media-heading">Exclusive Services for Children/Students</h3>
+        </section>
 
-      </div>
-      
-    <p className="txttittle">Unlike generic taxi rental applications, School Transport services are focused only on providing safe transportation of students.</p>
-
-    
-    </div>
-    
-  </div>
-  <div className="col-md-4 col-sm-4">
-    <div className="media box row">
-      <div className="pull-left">
-      <i class="fa fa-shield"></i>        
-      <h3 className="media-heading">Safe and Secure</h3>
-
-      </div>
-      
-    <p className="txttittle">STS has a strict process and a unique set of features which ensure a high level of
-safety and security for each child’s transportation.</p>
-
-    
-    </div>
-    
-  </div>
-  <div className="col-md-4 col-sm-4">
-    <div className="media box row">
-      <div className="pull-left">
-      <i class="fa fa-exclamation-triangle"></i>
-        <h3 className="media-heading">Speed Limits and Alerts</h3>
-
-      </div>
-      
-    <p className="txttittle">Know if the private cab or vehicle is exceeding speed limits you set. There are
-also alerts for sudden acceleration, unwanted stops, etc</p>
-
-    
-    </div>
-    
-  </div>
-
-
-  <div className="col-md-4 col-sm-4">
-    <div className="media box row">
-      <div className="pull-left">
-      <i class="fa fa-tag"></i>       
-       <h3 className="media-heading">Transparent, Upfront Pricing</h3>
-
-      </div>
-      
-    <p className="txttittle">The estimated prices mentioned in the app would be more or less the
-final charge, and there are no hidden costs involved.</p>
-
-    
-    </div>
-    
-  </div>
-  <div className="col-md-4 col-sm-4 ">
-    <div className="media box row">
-      <div className="pull-left">
-      <i class="fa fa-bus"></i>      <h3 className="media-heading">One Way Trips/Round Trips</h3>
-
-      </div>
-      
-    <p className="txttittle">Parents can choose if the transport service needs to be availed for one-
-way only or for a complete round trip.</p>
-
-    
-    </div>
-    
-  </div>
-  <div className="col-md-4 col-sm-4">
-    <div className="media box row">
-      <div className="pull-left">
-      <i class="fa fa-calendar"></i>        <h3 className="media-heading">Select Transportation Schedule</h3>
-
-      </div>
-      
-    <p className="txttittle">Select the days of a week you want to avail transport for your child if
-it is a repetitive trip and set the start and end dates.</p>
-
-    
-    </div>
-    
- 
-</div>
-
-        
-        </div>
-      </div>
-    </section>
-  
-{/*   
+        {/*   
     <section className="secfour pdgbtm0">
       <div className="container">
         <div className="row">
@@ -288,63 +319,82 @@ it is a repetitive trip and set the start and end dates.</p>
       </div>
     </section> */}
 
-<section className="secfour">
-  <div className="container"> 
-    <div className="row">
-      <div className="heading text-center">
-        <div className="col-sm-12">
-          <h2 className="headingtittle">How it works</h2>
-          <div className="hd-borde"></div>
-        </div>
-      </div>
-      <div className="col-sm-6">
-        {/* First Column with Background Image */}
-        <div className="box pdgbtm0 mngbtm0">
-          <div className="col-sm-10 col-sm-offset-1 ">
-            <div className="img-responsive">
-              <div className="img-container">
-                <img src="/Images/bg1.jpg" alt="inner" className="innerimg"/>
+        <section className="secfour">
+          <div className="container">
+            <div className="row">
+              <div className="heading text-center">
+                <div className="col-sm-12">
+                  <h2 className="headingtittle">How it works</h2>
+                  <div className="hd-borde"></div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                {/* First Column with Background Image */}
+                <div className="box pdgbtm0 mngbtm0">
+                  <div className="col-sm-10 col-sm-offset-1 ">
+                    <div className="img-responsive">
+                      <div className="img-container">
+                        <img
+                          src="/Images/bg1.jpg"
+                          alt="inner"
+                          className="innerimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                {/* Second Column with List */}
+                <div className="box pdgbtm0 mngbtm0">
+                  <div className="col-sm-10 col-sm-offset-1">
+                    <ol>
+                      <li>
+                        <h4 className="headingtittle">Easy Booking</h4>
+                        <p className="txt bg-danger">
+                          Find a vehicle and book in a couple of taps by
+                          entering your pick-up and drop-off locations. You
+                          would also see the estimated trip fare
+                        </p>
+                      </li>
+                      <li>
+                        <h4 className="headingtittle">Choose your driver</h4>
+                        <p className="txt">
+                          The nearest drivers would be shown as a list, and you
+                          can choose from them by looking at ratings and
+                          feedback
+                        </p>
+                      </li>
+                      <li>
+                        <h4 className="headingtittle">Start the Trip</h4>
+                        <p className="txt">
+                          Be at the pickup location with the child/children at
+                          the mentioned time, and the booked STS vehicle will
+                          arrive and the trip starts
+                        </p>
+                      </li>
+                      <li>
+                        <h4 className="headingtittle">Track in Real time</h4>
+                        <p className="txt">
+                          The app will show the vehicle location in real-time.
+                          You can monitor or check it when you want to.
+                        </p>
+                      </li>
+                      <li>
+                        <h4 className="headingtittle">Safe Arrival</h4>
+                        <p className="txt">
+                          Upon safe arrival, the STS app will notify you, and
+                          you can check the real-time drop-off location of your
+                          child
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="col-sm-6">
-        {/* Second Column with List */}
-        <div className="box pdgbtm0 mngbtm0">
-          <div className="col-sm-10 col-sm-offset-1">
-            <ol>
-              <li>
-                <h4 className="headingtittle">Easy Booking</h4>
-                <p className="txt bg-danger">Find a vehicle and book in a couple of taps by entering your pick-up and drop-off locations. You would also see the estimated trip fare</p>
-              </li>
-              <li>
-                <h4 className="headingtittle">Choose your driver</h4>
-                <p className="txt">The nearest drivers would be shown as a list, and you can choose from them by looking at ratings and feedback</p>
-              </li>
-              <li>
-                <h4 className="headingtittle">Start the Trip</h4>
-                <p className="txt">Be at the pickup location with the child/children at the mentioned time, and the booked STS vehicle will arrive and the trip starts</p>
-              </li>
-              <li>
-                <h4 className="headingtittle">Track in Real time</h4>
-                <p className="txt">The app will show the vehicle location in real-time. You can monitor or check it when you want to.</p>
-              </li>
-              <li>
-                <h4 className="headingtittle">Safe Arrival</h4>
-                <p className="txt">Upon safe arrival, the STS app will notify you, and you can check the real-time drop-off location of your child</p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-   
+        </section>
       </div>
     </>
   );

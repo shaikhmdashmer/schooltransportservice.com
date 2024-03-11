@@ -16,8 +16,8 @@ const aboutUs = () => {
           <div className="row">
             <article>
               <div className="inner-box-a-u row row-2-col">
-                <div className="col-xs-12 col-sm-6 row-2-col-1">
-                  <img src="/Images/a_mob_1.png" className="img-responsive" />
+                <div className="col-xs-12 col-sm-6 row-2-col-1 text-center">
+                  <img src="/Images/a_mob_1.png" className="img-res" />
                 </div>
                 <div className="col-xs-12 col-sm-6 row-2-col-1">
                   <p>
@@ -40,7 +40,7 @@ const aboutUs = () => {
                     our services.
                   </p>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-top-mrgn-sx">
+                <div className="col-xs-12 col-sm-12 col-top-mrgn-sx ">
                   <h2>Vision and Mission</h2>
                   <h3>Vision</h3>
                   <p>
@@ -77,8 +77,10 @@ const aboutUs = () => {
                         <div className="a-u-b">
                           <i className="fa fa-search"></i>
                         </div>
-                        <div className="media-body">
-                          <h3 className="media-heading">Our focus</h3>
+                        <div className="media-body ">
+                          <h3 className="media-heading text-center">
+                            Our focus
+                          </h3>
                           <p>
                             School Transport Services focuses on propounding
                             solutions for safely transporting school students,
@@ -94,7 +96,7 @@ const aboutUs = () => {
                           <i className="fa fa-building"></i>
                         </div>
                         <div className="media-body">
-                          <h3 className="media-heading">
+                          <h3 className="media-heading text-center">
                             Our Business Strategy
                           </h3>
                           <p>
@@ -113,7 +115,9 @@ const aboutUs = () => {
                           <i className="fa fa-bullseye"></i>
                         </div>
                         <div className="media-body">
-                          <h3 className="media-heading">Our goal</h3>
+                          <h3 className="media-heading text-center">
+                            Our goal
+                          </h3>
                           <p>
                             Eventually, our goal is to provide an exceptional
                             service to all our clients, and thence the clients

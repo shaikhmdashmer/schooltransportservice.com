@@ -61,7 +61,7 @@ export default function Header() {
             </div>
             <ul className="sidenav-menu">
               <li className="">
-                <a href="javascript:; " className="d-flex ">
+                <a href="/" className="d-flex ">
                   <span className="sidenav-link-icon  ">
                     <i className="material-icons">home</i>
                   </span>

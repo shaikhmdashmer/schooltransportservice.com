@@ -78,7 +78,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 395px;
+  /* width: 395px; */
   height: 100%;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   background: #212121;
@@ -129,7 +129,7 @@ body {
 
 .sidenav-brand {
   background: #22c1e6;
-  padding: 29px;
+  padding: 32px;
   border-bottom: 1px solid #d6d6d6;
   color: #fafafa;
   font-size: 20px;
@@ -234,15 +234,15 @@ a {
   background: #000000;
   padding: 1em 0;
 }
-#footer .footer-btn ul li a i {
+.icon-style {
+  width: 30px;
+  height: 30px;
   background-color: #252526;
-  color: #9b9e9f;
-  border-radius: 50%; /* Use 50% to make a circle */
-  width: 20px; /* Adjust the width */
-  height: 20px; /* Adjust the height */
-  line-height: 20px; /* Adjust the line height */
+  border-radius: 50%;
+  line-height: 20px;
   text-align: center;
-  margin: 0 0 0 10px;
+  margin: 0 10px;
+  padding: 5px;
 }
 #footer .footer-btn ul li {
   display: inline-block;
@@ -260,15 +260,22 @@ a {
 }
 
 .copy {
-  color: var(--whiteColor);
-  font-size: 20px;
+  color: rgb(157, 157, 157);
+  font-size: 17px;
   font-family: var(--font-family);
 }
 
 @media (max-width: 767px) {
   #footer .footer-top .footer-blk .footerh2 {
     margin: 0 0 16px 0;
-    background-color: #22c1e6;
+  }
+  .txt-cntr {
+    text-align: center;
+  }
+  .icon-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container {
@@ -291,7 +298,7 @@ a {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  h1dffffdfdf {
-    font-size: 28px !important;
+  .copy {
+    font-size: 18px !important;
   }
 }

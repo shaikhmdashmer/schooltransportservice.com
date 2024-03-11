@@ -6,37 +6,33 @@
   --secondaryColor: #8b8e8f;
   --bgColorPrimary: #59aa47;
   --bgColorSecondary: #58585a;
-  --blueColor:#3ebae8;
-  --bgColorInfo:#4fc6ed;
-  --bgColorInfosec:#428bca;
+  --blueColor: #3ebae8;
+  --bgColorInfo: #4fc6ed;
+  --bgColorInfosec: #428bca;
   --whiteColor: #fff;
   --font-family: "Josefin Sans";
-    --font-familysan: "Josefin Sans Regular", sans-serif;
+  --font-familysan: "Josefin Sans Regular", sans-serif;
 }
 /* ------section1--------- */
 
-  .carosalhome{
-  display:block;
+.carosalhome {
+  display: block;
   width: 100%;
   opacity: 1;
- 
 }
 
 .carousel-container {
   position: relative;
-
 }
 
 .carousel-item-content {
   position: relative;
- 
-  display: flex; ;
+
+  display: flex;
   justify-content: start;
   align-items: center;
-  width:100%;
- 
+  width: 100%;
 }
-
 
 .custom-carousel-button {
   border: none;
@@ -51,7 +47,6 @@
   height: 70px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
- 
 }
 
 .custom-carousel-button.prev {
@@ -65,39 +60,37 @@
 }
 .custom-carousel-button i {
   color: white;
-
 }
 .custom-carousel-button:hover {
-  background-color:var(--bgColorInfo);
+  background-color: var(--bgColorInfo);
 }
-.titile{
+.titile {
   font-size: 36px;
   line-height: 1em;
   font-weight: bold;
-font-family: var(--font-family);
-margin-bottom: 17px;
+  font-family: var(--font-family);
+  margin-bottom: 17px;
 }
-.txt{
-  font-size:21px;
+.txt {
+  font-size: 21px;
   font-weight: normal;
   margin-bottom: 24px;
   font-family: var(--font-family);
-
 }
 .btn {
   display: inline-block;
- 
+
   margin-bottom: 0;
-  
+
   font-weight: normal;
-  
+
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
- 
+
   user-select: none;
 }
 .btn-lg {
@@ -105,13 +98,12 @@ margin-bottom: 17px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0px;
-  background-color:var(--bgColorInfo);
-  border-color:var(--bgColorInfo);
+  background-color: var(--bgColorInfo);
+  border-color: var(--bgColorInfo);
   font-family: var(--font-family);
-
 }
-.btn-lg:hover{
-  background-color:var(--bgColorInfosec)
+.btn-lg:hover {
+  background-color: var(--bgColorInfosec);
 }
 /* .progressBar {
   height: 10px;
@@ -122,75 +114,63 @@ margin-bottom: 17px;
   border-radius: 5px;
 } */
 
-
-.carouseltitle{
+.carouseltitle {
   left: 90px;
-  position:absolute;
-  top:50px;
-   
+  position: absolute;
+  top: 50px;
 }
 /* ------section2--------- */
-.sectiontwo{
- 
-    float: left;
-    width: 100%;
-    padding: 3em 0;
-    background-color: var(--whiteColor);
-
+.sectiontwo {
+  float: left;
+  width: 100%;
+  padding: 3em 0;
+  background-color: var(--whiteColor);
 }
-.sectiontittle{
-    font-size: 22px;
-      font-weight: 700;
-      margin: 36px 0 12px;
-      font-family: var(--font-family);
-    }
+.sectiontittle {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 36px 0 12px;
+  font-family: var(--font-family);
+}
 /* ------section3--------- */
-
 
 /* Add your CSS styles here */
 /* Example styles for the section */
 .sectionthree {
   padding-top: 60px;
-  padding-bottom: 60px;;
+  padding-bottom: 60px;
   background-color: #3ebae8;
-  
 }
 .dark-img {
-  background-image:url("../public/Images/asfalt_dark_patten.png");
-background-repeat:repeat;
-background-size: cover;
-background-position: center;
+  background-image: url("../public/Images/asfalt_dark_patten.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .backgrd {
   background-color: #f4f4f4;
-  
 }
 .sectionthree .heading {
   float: left;
   width: 100%;
   font-weight: bold;
-  color:var(--bgColorSecondary);
-  
+  color: var(--bgColorSecondary);
 }
 
 .headingtittle {
   font-size: 33px;
   margin-bottom: 30px;
-  color:var(--bgColorSecondary);
+  color: var(--bgColorSecondary);
   font-weight: bold;
   font-family: var(--font-family);
-
- 
 }
 
 .hd-borde {
-
-    float: left;
-    width: 100%;
-    position: relative;
-    margin: 1em 0 0 0;
-
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 1em 0 0 0;
 }
 .hd-borde:before {
   content: "";
@@ -215,24 +195,16 @@ background-position: center;
   background: #f9f9f9;
 }
 
-
-
-
-
 .media.box {
   display: flex;
-  align-items: start; 
-    margin: 25px 0px;
-
-
+  align-items: start;
+  margin: 25px 0px;
 }
 
 .pull-left {
   display: flex;
   flex-direction: row;
-  margin-bottom:5px ;
-
- 
+  margin-bottom: 5px;
 }
 
 .pull-left i {
@@ -258,13 +230,13 @@ background-position: center;
   margin: 0; /* Remove default margin for paragraphs */
   text-align: start;
   font-family: var(--font-family);
-  }
+}
 /* ------section4------ */
 
-.secfour{
+.secfour {
   padding: 3em 0;
 }
-.img-responsive{
+.img-responsive {
   background-image: url("../public/Images/mob_bg.png");
   background-position: top center;
   background-size: cover;
@@ -274,26 +246,22 @@ background-position: center;
   /* position: absolute;
   z-index: 9; */
   /* top: 0px; */
-  
 }
-.innerimg{
+.innerimg {
   width: 250px;
   height: 430px;
   position: absolute;
   z-index: 9;
-  
-  
 }
 
 @media (max-width: 767px) {
-  .carouseltitle{
+  .carouseltitle {
     left: 5px;
-    top:15px;
+    top: 15px;
   }
-  .titile{
+  .titile {
     font-size: 20px;
     line-height: 20px;
-  
   }
   .custom-carousel-button {
     visibility: hidden;
@@ -302,10 +270,8 @@ background-position: center;
 
 /* Media query for medium devices (e.g., tablets) */
 @media (min-width: 576px) and (max-width: 768px) {
- 
 }
 
 /* Media query for large devices (e.g., desktops) */
 @media (min-width: 992px) {
- 
 }

@@ -6,7 +6,7 @@ const howItWorks = () => {
       <section className="block01-h-i-w">
         <div className="container">
           <article>
-            <div className="heading-sx-1 text-center">
+            <div className="heading-sx-1 text-center ">
               <div className="col-sm-12">
                 <h2>How It Works?</h2>
                 <div className="hd-border-sx"></div>
@@ -31,10 +31,7 @@ const howItWorks = () => {
             <div className="col-sm-12 row row-2-col">
               <div className="col-md-6 col-sm-6 img-ctr row-2-col-1">
                 <div className="h-i-w-img-sx">
-                  <img
-                    src="/Images/how-it-works.png"
-                    className="img-responsive"
-                  />
+                  <img src="/Images/how-it-works.png" />
                 </div>
               </div>
               <div className="col-md-6 col-sm-6 row-2-col-2">

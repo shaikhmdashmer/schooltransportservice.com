@@ -12,24 +12,26 @@ const features = () => {
         </div>
       </section>
       <section className="features-block02">
-        <div className="container ">
-          <article className="row">
-            <div className="col-md-5 col-sm-5 offset-0">
-              <img src="/Images/f_car.png" className="width-sx" />
-            </div>
-            <div className="col-md-7 col-sm-7">
-              <div className="wrap-content-sx drk-clr-text-sx">
-                <div className="wrap-content-ctr-text-sx offset-rt-4em">
-                  <h2>Safety, Convenience & Peace of Mind</h2>
-                  <p>
-                    The services offered by STS include car pooling, private cab
-                    or shared transportation service. These services are
-                    provided through mobile apps available for download in the
-                    Google Play Store or App Store. The purpose of STS is to
-                    reduce parental anxiety when transporting their children to
-                    school and elsewhere by private transport vehicles. STS has
-                    a multitude of features which are described below.
-                  </p>
+        <div className="container">
+          <article>
+            <div className="row-sx row-2-col">
+              <div className="col-md-5 col-sm-5 offset-0 row-2-col-1">
+                <img src="/Images/f_car.png" className="width-sx" />
+              </div>
+              <div className="col-md-7 col-sm-7 row-2-col-2">
+                <div className="wrap-content-sx drk-clr-text-sx">
+                  <div className="wrap-content-ctr-text-sx offset-rt-4em">
+                    <h2>Safety, Convenience & Peace of Mind</h2>
+                    <p>
+                      The services offered by STS include car pooling, private
+                      cab or shared transportation service. These services are
+                      provided through mobile apps available for download in the
+                      Google Play Store or App Store. The purpose of STS is to
+                      reduce parental anxiety when transporting their children
+                      to school and elsewhere by private transport vehicles. STS
+                      has a multitude of features which are described below.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,7 +54,7 @@ const features = () => {
                     <div className="col-md-4 col-sm-4 text-center">
                       <img
                         src="/Images/f_mob_1.png"
-                        className="img-responsive a-f-img-res-sx"
+                        className="a-f-img-res-sx"
                       />
                     </div>
                     <div className="col-md-8 col-sm-8 ">
@@ -189,7 +191,7 @@ const features = () => {
                     <div className="col-md-5 col-sm-5 text-center">
                       <img
                         src="/Images/features_mobi_img.jpg"
-                        className="img-responsive b-f-img-res-sx"
+                        className="b-f-img-res-sx"
                       />
                     </div>
                   </div>
@@ -199,7 +201,7 @@ const features = () => {
                     <div className="col-md-5 col-sm-5 text-center">
                       <img
                         src="/Images/f_mob_2.png"
-                        className="img-responsive c-f-img-res-sx"
+                        className="c-f-img-res-sx"
                       />
                     </div>
                     <div className="col-md-7 col-sm-7">
