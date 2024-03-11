@@ -49,7 +49,7 @@ export default function index() {
       </Head>
 
       <div>
-        <section>
+        <section className="">
           <div className="carouselcontainer">
             <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
               <Carousel.Item interval={10000}>
@@ -129,7 +129,7 @@ export default function index() {
               </Carousel.Item>
             </Carousel>
           </div></section>
-        <div className="sectiontwo">
+        <section className="sectiontwo">
           <div className="container">
             <div className="row">
               <div className="col-sm-9 w-75">
@@ -142,7 +142,7 @@ export default function index() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <section className="sectionthree dark-img  backgrd">
           <div className="container">
             <div className="row">
@@ -262,7 +262,7 @@ export default function index() {
               </div>
               <div className="col-sm-6">
                 {/* First Column with Background Image */}
-                <div className="box pdgbtm0 mngbtm0">
+                <div className=" pdgbtm0 mngbtm0">
                   <div className="col-sm-10 col-sm-offset-1 ">
 
                     <div className="img-responsive" id="backgroundImage">
@@ -350,7 +350,7 @@ export default function index() {
               </div>
               <div className="col-sm-6">
                 {/* Second Column with List */}
-                <div className="box pdgbtm0 mngbtm0">
+                <div className=" pdgbtm0 mngbtm0">
                   <div className="col-sm-10">
                     <div className="mobrow">
                       <div className="activelist">
@@ -420,7 +420,7 @@ export default function index() {
                     <h2 className="clrwhite">Download App Section with QR code</h2>
                   </div>
                 </div>
-                <div className=""></div>
+                
                 <div className="main">
                   <div className="col-sm-4 col-sm-offset-4">
                     <div className="qrcode-wrap">
@@ -446,7 +446,7 @@ export default function index() {
         </section>
 
 
-        <section>
+        <section className="">
           <section className="blog-block01 fabric-bg-sx fabric-squares-patten-img-sx">
             <div className="container centr-sx">
               <div className="row">
