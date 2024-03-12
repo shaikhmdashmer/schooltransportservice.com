@@ -73,7 +73,7 @@
 .titile {
   font-size: 36px;
   line-height: 1em;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: var(--font-family);
   margin-bottom: 17px;
 }
@@ -124,6 +124,9 @@
   left: 90px;
   position: absolute;
   top: 50px;
+  /* background-color: #24890d; */
+  display: flex;
+  align-items: center;
 }
 /* ------section2--------- */
 .sectiontwo {
@@ -132,7 +135,7 @@
 }
 .sectiontittle {
   font-size: 22px;
-  font-weight: 700;
+  /* font-weight: 700; */
   margin: 36px 0 12px;
   font-family: var(--font-family);
 }
