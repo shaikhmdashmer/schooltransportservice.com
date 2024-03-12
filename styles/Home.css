@@ -58,6 +58,12 @@
   right: 0;
   transform: translate(50%, -50%); /* Center horizontally */
 }
+.custom-carousel-button.prev .icon {
+  margin-left: 25px;
+}
+.custom-carousel-button.next .icon {
+  margin-right: 25px;
+}
 .custom-carousel-button .icon {
   color: white;
 }

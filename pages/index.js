@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
+// import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function index() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -50,113 +52,115 @@ export default function index() {
 
       <div>
         <section className="">
-          <div className="carouselcontainer bg-primary">
-            <Carousel
-              indicators={false}
-              prevIcon={<PrevButton />}
-              nextIcon={<NextButton />}
-            >
-              <Carousel.Item interval={10000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgone.jpg"
-                    alt="bg1"
-                  />
+          <div className="row">
+            <div className="carouselcontainer">
+              <Carousel
+                indicators={false}
+                prevIcon={<PrevButton />}
+                nextIcon={<NextButton />}
+              >
+                <Carousel.Item interval={10000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgone.jpg"
+                      alt="bg1"
+                    />
 
-                  <Carousel.Caption className="carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">
-                            Start Earning with School Transport Services!
-                          </h2>
-                          <p className="txt">
-                            {" "}
-                            Private cab owners can list as a driver with School
-                            Transport services and start earning for each safe
-                            ride you make.
-                          </p>
+                    <Carousel.Caption className="carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Start Earning with School Transport Services!
+                            </h2>
+                            <p className="txt">
+                              {" "}
+                              Private cab owners can list as a driver with
+                              School Transport services and start earning for
+                              each safe ride you make.
+                            </p>
 
-                          <a className="btn btn-primary btn-lg" href="">
-                            Read More
-                          </a>
+                            <a className="btn btn-primary btn-lg" href="">
+                              Read More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                  {/* <div id="progressBar" className="progress">
+                    </Carousel.Caption>
+                    {/* <div id="progressBar" className="progress">
       <div id="bar" className="progress-bar bg-success" style={{ width: '57.7143%' }}></div>
     </div> */}
-                </div>
-              </Carousel.Item>
+                  </div>
+                </Carousel.Item>
 
-              <Carousel.Item interval={2000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgtwo.jpg"
-                    alt="bg2"
-                  />
+                <Carousel.Item interval={2000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgtwo.jpg"
+                      alt="bg2"
+                    />
 
-                  <Carousel.Caption className=" carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">
-                            Child Transportation Made Simple
-                          </h2>
-                          <p className="txt">
-                            {" "}
-                            Is transporting your child to specific destinations
-                            safely a major concern for you? If yes, worry no
-                            more!
-                          </p>
-                          <p className="txt">
-                            School Transport Services provides you a convenient
-                            mobile app solution
-                          </p>
+                    <Carousel.Caption className=" carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Child Transportation Made Simple
+                            </h2>
+                            <p className="txt">
+                              {" "}
+                              Is transporting your child to specific
+                              destinations safely a major concern for you? If
+                              yes, worry no more!
+                            </p>
+                            <p className="txt">
+                              School Transport Services provides you a
+                              convenient mobile app solution
+                            </p>
 
-                          <a className="btn btn-primary btn-lg" href="">
-                            Read More
-                          </a>
+                            <a className="btn btn-primary btn-lg" href="">
+                              Read More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item interval={115000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgthree.jpg"
-                    alt="bg3"
-                  />
-                  <Carousel.Caption className="carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">
-                            Lend a helping hand to Fellow Parents!
-                          </h2>
-                          <p className="txt">
-                            {" "}
-                            Carpooling with fellow parents can be a great way to
-                            ensure your child is safe. It not only ensures
-                            safety, but can also gain a friend for you.
-                          </p>
+                    </Carousel.Caption>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item interval={115000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgthree.jpg"
+                      alt="bg3"
+                    />
+                    <Carousel.Caption className="carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Lend a helping hand to Fellow Parents!
+                            </h2>
+                            <p className="txt">
+                              {" "}
+                              Carpooling with fellow parents can be a great way
+                              to ensure your child is safe. It not only ensures
+                              safety, but can also gain a friend for you.
+                            </p>
 
-                          <a className="btn btn-primary btn-lg" href="">
-                            Learn More
-                          </a>
+                            <a className="btn btn-primary btn-lg" href="">
+                              Learn More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                </div>
-              </Carousel.Item>
-            </Carousel>
+                    </Carousel.Caption>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+            </div>
           </div>
         </section>
         <section className="sectiontwo">
@@ -629,11 +633,13 @@ export default function index() {
 const PrevButton = (props) => (
   <button className="custom-carousel-button prev" onClick={props.onClick}>
     <i className="fa fa-angle-left icon"></i>
+    {/* <MdKeyboardArrowLeft className="icon"/> */}
   </button>
 );
 
 const NextButton = (props) => (
   <button className="custom-carousel-button next" onClick={props.onClick}>
-    <i className="fa fa-angle-left icon"></i>
+    {/* <i className="fa fa-angle-right icon"></i> */}
+    <MdOutlineKeyboardArrowRight className="icon" />
   </button>
 );
