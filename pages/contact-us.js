@@ -6,7 +6,7 @@ const contactus = () => {
     <section id="sts-wrap-content">
       <section id="map-wrap">
         <div className="col-sm-12 service-cont wow zoomIn animated">
-          <div className="row">
+          <div className="">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15785.355117087673!2d76.94701069999999!3d8.466399050000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1502262410146" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen=""></iframe>
           </div>
         </div>
@@ -44,8 +44,8 @@ const contactus = () => {
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-7">
-                <div className="page-block-cont-info">
-                  <div className="default-form ">
+                <div className="page-block-cont-info ">
+                  <div className="default-form text-center">
 
                     <form id="form_subt">
                       <div className="form-group">
@@ -63,7 +63,7 @@ const contactus = () => {
                       <span id="form_error" style={{ color: "#ff940f", float: "left", width: "100%", margin: "5px 0", fontsize: "17px", textalign: "center" }}></span>
                       <span id="form_success" style={{ color: "#478e43", float: "left", width: "100%", margin: "5px 0", fontsize: "17px", textalign: "center" }}></span>
                      
-                      <div className="form-group" style={{ position: "relative"  }} >
+                      <div className="form-group text-start" style={{ position: "relative"  }} >
                         <input type="hidden" id="current_page" value="Contact Us" />
                         <input type="submit" value="SUBMIT" className="btncontact" id="user_submit" />
                         <div className="loader" style={{ padding: "70px" }}></div>

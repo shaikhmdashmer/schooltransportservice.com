@@ -24,7 +24,6 @@
 }
 .carouselcontainer {
   position: relative;
-
 }
 
 .carousel-item-content {
@@ -57,14 +56,21 @@
 .custom-carousel-button.prev {
   left:0;
   transform: translate(-50%, -50%); /* Center horizontally */
- 
-}
+
+ }  
 
 .custom-carousel-button.next {
   right: 0;
   transform: translate(50%, -50%); /* Center horizontally */
+ 
 }
-.custom-carousel-button i {
+.custom-carousel-button.prev .icon{
+  margin-left: 25px;
+}
+.custom-carousel-button.next .icon{
+  margin-right: 25px;
+}
+.custom-carousel-button .icon {
   color: white;
 
 }
@@ -74,7 +80,7 @@
 .titile{
   font-size: 36px;
   line-height: 1em;
-  font-weight: bold;
+  /* font-weight: bold; */
 font-family: var(--font-family);
 margin-bottom: 17px;
 }
@@ -129,6 +135,9 @@ margin-bottom: 17px;
   left: 90px;
   position:absolute;
   top:50px;
+  /* background-color: #24890d; */
+  display: flex;
+  align-items: center;
    
 }
 /* ------section2--------- */
@@ -140,7 +149,7 @@ margin-bottom: 17px;
 }
 .sectiontittle{
     font-size: 22px;
-      font-weight: 700;
+      /* font-weight: 700; */
       margin: 36px 0 12px;
       font-family: var(--font-family);
     }
@@ -450,12 +459,12 @@ display: none;  }
   color: #000;
 }
 
-.qrcode img {
-  width: 120px;
+.qrcode .imgqr {
+  width: 150px;
   height: 120px;
 }
 
-.qrcode span {
+.qrcode .spantxt {
   float: left;
   font-weight: bold;
   color: var(--whiteColor);
@@ -479,7 +488,9 @@ display: none;  }
   margin-bottom: 10px !important;
   text-decoration: none;
 }
-
+.mainmob{
+  display: none;
+}
 
 /* contact-us-style */
 .sts-wrap-content {
@@ -533,11 +544,16 @@ display: none;  }
 .formcontact {
   margin-bottom: 15px;
 }
-.contactinput{
-  
-    border: 1px solid #17c1e5 !important;
+.contactinput {
+  border: 1px solid #17c1e5 !important;
+ 
+}
+
+.contactinput:focus {
+  box-shadow: none;
 
 }
+
 .btncontact {
   background-color:var(--bgColorInfosubmit);
     border: 0;
@@ -556,50 +572,90 @@ display: none;  }
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 767px) {
-  .sectionfive {
-    padding-top: 20px;
+  .carosalhome{
+    width: 100%;
+    height: 350px;
   }
-  .qrcode-wrap:before,
-  .qrcode-wrap:after {
-  margin-top:0 ;
+
+}
+ @media screen and (max-width: 767px) {
+  .main{
+    display: none;
+   }
+  .mobmain .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
   }
 
-  .qrcode-wrap:before {
-    top: -75px; /* Adjust position as needed */
-    height: 75px; /* Adjust height as needed */
-  }
-
-  .qrcode-wrap:after {
-    top: 75px; /* Adjust position as needed */
-    margin-left: -16px;
-  }
-
-  .qrcode-wrap {
-    flex-direction: column; /* Stack as column on mobile */
+  .qrcodemob {
+   justify-content: center;
     align-items: center;
   }
-
-  .app-btn {
-    margin-top: 20px; /* Adjust margin as needed */
+  .qrcode-wrapmob {
+  
+    justify-content: center;
+    align-items: center;
+   
   }
-  .qrcode img {
-    width: 80px;
+  .qrcode-wrapmob:after {
+    content: "or";
+    width: 33px;
+    height: 33px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 1.000em;
+    text-align: center;
+    line-height: 33px;
+    position: absolute;
+    left: 49%;
+    cursor: pointer;
+   margin-top: 10;
+    color: #000;
+  }
+  .qrcodemob .imgqrmob {
+    width: 120px;
     height: 80px;
+    margin-bottom: 15px;
+    margin-right: -25px;
   }
-  .app-btn .appimg {
-    
-    width: 120px; /* Adjust width as needed */
-    height: 45px;
-
-  }
-  .clrwhite {
-    font-size: 30px;
-  }
-  .qrcode span {
+  .qrcodemob .spantxt{
+    float: left;
+    font-weight: bold;
+    color: var(--whiteColor);
     font-size: 18px;
+    margin: 0 0 10px 0;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-left: 5px;
   }
-}
+  .app-btn {
+    float: left;
+    width: 157px;
+   margin-top: 25px;
+    /* background-color: #17c1e5; */
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  
+  .app-btn .appimg {
+    border: solid 1px #fff;
+    display: block;
+    border-radius: 5px;
+    width: 130px;
+    height: 48px;
+    margin-top: 25px;
+    text-decoration: none;
+   
+  }
+ }
+
+
 
 @media (max-width: 767px) {
   .carouseltitle{
@@ -612,10 +668,10 @@ display: none;  }
   
   }
   .custom-carousel-button {
-    visibility: hidden;
+display: none;
   }
   .qrcode-wrap:before {
-visibility: hidden;
+display: none;
 }
 }
 /* Media query for medium devices (e.g., tablets) */
@@ -625,5 +681,8 @@ visibility: hidden;
 
 /* Media query for large devices (e.g., desktops) */
 @media (min-width: 992px) {
- 
+  .mobmain{
+    display: none;
+  }
+  
 }

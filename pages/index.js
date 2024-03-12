@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { useState } from 'react';
 import { Carousel } from "react-bootstrap";
+// import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 
 export default function index() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -50,10 +53,13 @@ export default function index() {
 
       <div>
         <section className="">
+         
+            <div className="row">
           <div className="carouselcontainer">
+         
             <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
               <Carousel.Item interval={10000}>
-                <div className="carousel-item-content position-relative">
+                <div className="carousel-item-content">
                   <img
                     className="carosalhome"
                     src="/Images/bgone.jpg"
@@ -91,7 +97,7 @@ export default function index() {
 
                   <Carousel.Caption className=" carouseltitle">
                     <div className="container">
-                      <div className="row ">
+                      <div className="row">
                         <div className="col-sm-8 text-start">
                           <h2 className="titile">Child Transportation Made Simple</h2>
                           <p className="txt"> Is transporting your child to specific destinations safely a major concern for you? If yes, worry no more!</p>
@@ -114,7 +120,7 @@ export default function index() {
                   />
                   <Carousel.Caption className="carouseltitle">
                     <div className="container">
-                      <div className="row ">
+                      <div className="row">
                         <div className="col-sm-8 text-start">
                           <h2 className="titile">Lend a helping hand to Fellow Parents!</h2>
                           <p className="txt"> Carpooling with fellow parents can be a great way to ensure your child is safe. It not only ensures safety,
@@ -128,6 +134,8 @@ export default function index() {
                 </div>
               </Carousel.Item>
             </Carousel>
+         
+          </div>
           </div></section>
         <section className="sectiontwo">
           <div className="container">
@@ -411,39 +419,55 @@ export default function index() {
           </div>
         </section>
 
-        <section className="sectionfive drk-bg climpek-pattern">
-          <div className="container">
-            <div className="row">
-              <article>
-                <div className="heading text-center">
-                  <div className="col-sm-12">
-                    <h2 className="clrwhite">Download App Section with QR code</h2>
-                  </div>
-                </div>
-                
-                <div className="main">
-                  <div className="col-sm-4 col-sm-offset-4">
-                    <div className="qrcode-wrap">
+        <section className="sectionfive drk-bg climpek-pattern ">
+  <div className="container">
+    <div className="row">
+      <article>
+        <div className="heading text-center">
+          <div className="col-sm-12">
+            <h2 className="clrwhite">Download App Section with QR code</h2>
+          </div>
+        </div>
 
-                      <div className="qrcode">
-                        <span>Scan QR Code</span>
-                        <img className="" src="/Images/pax_sg.jpg" alt="QR Code" />
-                      </div>
+        <div className="main">
+          <div className="col-sm-12"> 
+            <div className="qrcode-wrap">
 
+              <div className="qrcode row">
+                <span className="spantxt">Scan QR Code</span>
+                <img className="imgqr" src="/Images/pax_sg.jpg" alt="QR Code" />
+              </div>
 
+              <div className="app-btn">
+                <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
+                <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
+              </div>
 
-                      <div className="app-btn">
-                        <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
-                        <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
             </div>
           </div>
-        </section>
+        </div>
+        <div className="mobmain">
+          <div className="col-sm-12"> 
+            <div className="qrcode-wrapmob">
+
+              <div className="qrcodemob row">
+                <span className="spantxt">Scan QR Code</span>
+                <img className="imgqrmob" src="/Images/pax_sg.jpg" alt="QR Code" />
+              </div>
+
+              <div className="app-btn">
+                <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
+                <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 
 
         <section className="">
@@ -493,12 +517,16 @@ export default function index() {
 }
 const PrevButton = (props) => (
   <button className="custom-carousel-button prev" onClick={props.onClick}>
-    <i className="fa fa-angle-left"></i>
+    <i className="fa fa-angle-left icon"></i>
+    {/* <MdKeyboardArrowLeft className="icon"/> */}
+
   </button>
 );
 
 const NextButton = (props) => (
   <button className="custom-carousel-button next" onClick={props.onClick}>
-    <i className="fa fa-angle-left"></i>
+    {/* <i className="fa fa-angle-right icon"></i> */}
+    <MdOutlineKeyboardArrowRight  className="icon"/>
+
   </button>
 );
