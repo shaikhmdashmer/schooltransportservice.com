@@ -50,14 +50,14 @@ export default function index() {
 
       <div>
         <section className="">
-          <div className="carouselcontainer">
+          <div className="carouselcontainer bg-primary">
             <Carousel
               indicators={false}
               prevIcon={<PrevButton />}
               nextIcon={<NextButton />}
             >
               <Carousel.Item interval={10000}>
-                <div className="carousel-item-content position-relative">
+                <div className="carousel-item-content">
                   <img
                     className="carosalhome"
                     src="/Images/bgone.jpg"
@@ -101,7 +101,7 @@ export default function index() {
 
                   <Carousel.Caption className=" carouseltitle">
                     <div className="container">
-                      <div className="row ">
+                      <div className="row">
                         <div className="col-sm-8 text-start">
                           <h2 className="titile">
                             Child Transportation Made Simple
@@ -135,7 +135,7 @@ export default function index() {
                   />
                   <Carousel.Caption className="carouseltitle">
                     <div className="container">
-                      <div className="row ">
+                      <div className="row">
                         <div className="col-sm-8 text-start">
                           <h2 className="titile">
                             Lend a helping hand to Fellow Parents!
@@ -503,7 +503,7 @@ export default function index() {
           </div>
         </section>
 
-        <section className="sectionfive drk-bg climpek-pattern">
+        <section className="sectionfive drk-bg climpek-pattern ">
           <div className="container">
             <div className="row">
               <article>
@@ -516,12 +516,43 @@ export default function index() {
                 </div>
 
                 <div className="main">
-                  <div className="col-sm-4 col-sm-offset-4">
+                  <div className="col-sm-12">
                     <div className="qrcode-wrap">
-                      <div className="qrcode">
-                        <span>Scan QR Code</span>
+                      <div className="qrcode row">
+                        <span className="spantxt">Scan QR Code</span>
                         <img
-                          className=""
+                          className="imgqr"
+                          src="/Images/pax_sg.jpg"
+                          alt="QR Code"
+                        />
+                      </div>
+
+                      <div className="app-btn">
+                        <a href="#">
+                          <img
+                            className="appimg"
+                            src="/Images/app-store.png"
+                            alt="App Store"
+                          />
+                        </a>
+                        <a href="#">
+                          <img
+                            className="appimg"
+                            src="/Images/google-play.png"
+                            alt="Google Play"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mobmain">
+                  <div className="col-sm-12">
+                    <div className="qrcode-wrapmob">
+                      <div className="qrcodemob row">
+                        <span className="spantxt">Scan QR Code</span>
+                        <img
+                          className="imgqrmob"
                           src="/Images/pax_sg.jpg"
                           alt="QR Code"
                         />
@@ -597,12 +628,12 @@ export default function index() {
 }
 const PrevButton = (props) => (
   <button className="custom-carousel-button prev" onClick={props.onClick}>
-    <i className="fa fa-angle-left"></i>
+    <i className="fa fa-angle-left icon"></i>
   </button>
 );
 
 const NextButton = (props) => (
   <button className="custom-carousel-button next" onClick={props.onClick}>
-    <i className="fa fa-angle-left"></i>
+    <i className="fa fa-angle-left icon"></i>
   </button>
 );
