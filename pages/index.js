@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from 'react';
+import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 // import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -10,11 +10,11 @@ export default function index() {
 
   // Define an array of image URLs
   const images = [
-   "/Images/bg1.jpg",
-   "Images/bg2.jpg",
-   "/Images/bg3.jpg",
-   "Images/bg2.jpg",
-   "/Images/bg1.jpg",
+    "/Images/bg1.jpg",
+    "Images/bg2.jpg",
+    "/Images/bg3.jpg",
+    "Images/bg2.jpg",
+    "/Images/bg1.jpg",
     // Add more image URLs as needed
   ];
 
@@ -55,6 +55,7 @@ export default function index() {
         <section className="">
          
             <div className="row">
+
           <div className="carouselcontainer">
          
             <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
@@ -66,34 +67,40 @@ export default function index() {
                     alt="bg1"
                   />
 
-                  <Carousel.Caption className="carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">Start Earning with School Transport Services!</h2>
-                          <p className="txt"> Private cab owners can list as a driver with School Transport services and start earning for each safe ride you make.</p>
+                    <Carousel.Caption className="carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Start Earning with School Transport Services!
+                            </h2>
+                            <p className="txt">
+                              {" "}
+                              Private cab owners can list as a driver with
+                              School Transport services and start earning for
+                              each safe ride you make.
+                            </p>
 
-
-                          <a className="btn btn-primary btn-lg" href="">Read More</a>
+                            <a className="btn btn-primary btn-lg" href="">
+                              Read More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                  {/* <div id="progressBar" className="progress">
+                    </Carousel.Caption>
+                    {/* <div id="progressBar" className="progress">
       <div id="bar" className="progress-bar bg-success" style={{ width: '57.7143%' }}></div>
     </div> */}
-                </div>
-              </Carousel.Item>
+                  </div>
+                </Carousel.Item>
 
-
-
-              <Carousel.Item interval={2000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgtwo.jpg"
-                    alt="bg2"
-                  />
+                <Carousel.Item interval={2000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgtwo.jpg"
+                      alt="bg2"
+                    />
 
                   <Carousel.Caption className=" carouseltitle">
                     <div className="container">
@@ -133,20 +140,25 @@ export default function index() {
                   </Carousel.Caption>
                 </div>
               </Carousel.Item>
+
             </Carousel>
-         
+            <div className="greenButton"></div>
+
           </div>
           </div></section>
         <section className="sectiontwo">
           <div className="container">
             <div className="row">
-              <div className="col-sm-9 w-75">
+              <div className="col-sm-9 columsection text-start">
                 <h3 className="sectiontittle">
-                  Start transporting your child safely to any destination from anywhere while monitoring their rela time location!
+                  Start transporting your child safely to any destination from
+                  anywhere while monitoring their rela time location!
                 </h3>
               </div>
-              <div class="col-sm-3 text-center mngtop30">
-                <a class="btn btn-primary btn-lg" href="">Download Now!</a>
+              <div class="col-sm-3 text-center mngtop30 columsectiontwo">
+                <a class="btn btn-primary btn-lg" href="">
+                  Download Now!
+                </a>
               </div>
             </div>
           </div>
@@ -156,108 +168,106 @@ export default function index() {
             <div className="row">
               <div className="heading text-center ">
                 <div className="col-sm-12">
-                  <h2 className="headingtittle">Why Ride with School Transport Services</h2>
+                  <h2 className="headingtittle">
+                    Why Ride with School Transport Services
+                  </h2>
                   <div className="hd-borde"></div>
-                </div></div>
-
+                </div>
+              </div>
 
               <div className="col-md-4 col-sm-4">
                 <div className="media box row">
                   <div className="pull-left">
                     <i className="fa fa-child"></i>
-                    <h3 className="media-heading">Exclusive Services for Children/Students</h3>
-
+                    <h3 className="media-heading">
+                      Exclusive Services for Children/Students
+                    </h3>
                   </div>
 
-                  <p className="txttittle">Unlike generic taxi rental applications, School Transport services are focused only on providing safe transportation of students.</p>
-
-
+                  <p className="txttittle">
+                    Unlike generic taxi rental applications, School Transport
+                    services are focused only on providing safe transportation
+                    of students.
+                  </p>
                 </div>
-
               </div>
               <div className="col-md-4 col-sm-4">
                 <div className="media box row">
                   <div className="pull-left">
                     <i class="fa fa-shield"></i>
                     <h3 className="media-heading">Safe and Secure</h3>
-
                   </div>
 
-                  <p className="txttittle">STS has a strict process and a unique set of features which ensure a high level of
-                    safety and security for each child’s transportation.</p>
-
-
+                  <p className="txttittle">
+                    STS has a strict process and a unique set of features which
+                    ensure a high level of safety and security for each child’s
+                    transportation.
+                  </p>
                 </div>
-
               </div>
               <div className="col-md-4 col-sm-4">
                 <div className="media box row">
                   <div className="pull-left">
                     <i class="fa fa-exclamation-triangle"></i>
                     <h3 className="media-heading">Speed Limits and Alerts</h3>
-
                   </div>
 
-                  <p className="txttittle">Know if the private cab or vehicle is exceeding speed limits you set. There are
-                    also alerts for sudden acceleration, unwanted stops, etc</p>
-
-
+                  <p className="txttittle">
+                    Know if the private cab or vehicle is exceeding speed limits
+                    you set. There are also alerts for sudden acceleration,
+                    unwanted stops, etc
+                  </p>
                 </div>
-
               </div>
-
 
               <div className="col-md-4 col-sm-4">
                 <div className="media box row">
                   <div className="pull-left">
                     <i class="fa fa-tag"></i>
-                    <h3 className="media-heading">Transparent, Upfront Pricing</h3>
-
+                    <h3 className="media-heading">
+                      Transparent, Upfront Pricing
+                    </h3>
                   </div>
 
-                  <p className="txttittle">The estimated prices mentioned in the app would be more or less the
-                    final charge, and there are no hidden costs involved.</p>
-
-
+                  <p className="txttittle">
+                    The estimated prices mentioned in the app would be more or
+                    less the final charge, and there are no hidden costs
+                    involved.
+                  </p>
                 </div>
-
               </div>
               <div className="col-md-4 col-sm-4 ">
                 <div className="media box row">
                   <div className="pull-left">
-                    <i class="fa fa-bus"></i>      <h3 className="media-heading">One Way Trips/Round Trips</h3>
-
+                    <i class="fa fa-bus"></i>{" "}
+                    <h3 className="media-heading">One Way Trips/Round Trips</h3>
                   </div>
 
-                  <p className="txttittle">Parents can choose if the transport service needs to be availed for one-
-                    way only or for a complete round trip.</p>
-
-
+                  <p className="txttittle">
+                    Parents can choose if the transport service needs to be
+                    availed for one- way only or for a complete round trip.
+                  </p>
                 </div>
-
               </div>
               <div className="col-md-4 col-sm-4">
                 <div className="media box row">
                   <div className="pull-left">
-                    <i class="fa fa-calendar"></i>        <h3 className="media-heading">Select Transportation Schedule</h3>
-
+                    <i class="fa fa-calendar"></i>{" "}
+                    <h3 className="media-heading">
+                      Select Transportation Schedule
+                    </h3>
                   </div>
 
-                  <p className="txttittle">Select the days of a week you want to avail transport for your child if
-                    it is a repetitive trip and set the start and end dates.</p>
-
-
+                  <p className="txttittle">
+                    Select the days of a week you want to avail transport for
+                    your child if it is a repetitive trip and set the start and
+                    end dates.
+                  </p>
                 </div>
-
-
               </div>
-
-
             </div>
           </div>
         </section>
-
-
 
         <section className="secfour mob-hide">
           <div className="container">
@@ -272,14 +282,14 @@ export default function index() {
                 {/* First Column with Background Image */}
                 <div className=" pdgbtm0 mngbtm0">
                   <div className="col-sm-10 col-sm-offset-1 ">
-
                     <div className="img-responsive" id="backgroundImage">
                       <div className="img-container">
                         {/* <img src="/Images/bg1.jpg" alt="inner" className="innerimg" id="mainImage" /> */}
-                        <img src={images[currentImageIndex]}   className="innerimg" />
-
+                        <img
+                          src={images[currentImageIndex]}
+                          className="innerimg"
+                        />
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -290,46 +300,89 @@ export default function index() {
                   <div className="col-sm-10 ">
                     <ol className="orderlist">
                       <li className="activelist">
-                        <div class="list-item-content" onClick={() => changeImage(0)}>
+                        <div
+                          class="list-item-content"
+                          onClick={() => changeImage(0)}
+                        >
                           <span>1</span>
                           <div>
                             <h4 className="media-heading">Easy Booking</h4>
-                            <p className="txttittle">Find a vehicle and book in a couple of taps by entering your pick-up and drop-off locations. You would also see the estimated trip fare</p>
+                            <p className="txttittle">
+                              Find a vehicle and book in a couple of taps by
+                              entering your pick-up and drop-off locations. You
+                              would also see the estimated trip fare
+                            </p>
                           </div>
                         </div>
                       </li>
 
-                      <li className="activelist" >
-                        <div class="list-item-content" onClick={() => changeImage(1)}>
+                      <li className="activelist">
+                        <div
+                          class="list-item-content"
+                          onClick={() => changeImage(1)}
+                        >
                           <span>2</span>
                           <div>
-                            <h4 className="media-heading">Choose your driver</h4>
-                            <p className="txttittle">The nearest drivers would be shown as a list, and you can choose from them by looking at ratings and feedback</p>
-                          </div></div>
+                            <h4 className="media-heading">
+                              Choose your driver
+                            </h4>
+                            <p className="txttittle">
+                              The nearest drivers would be shown as a list, and
+                              you can choose from them by looking at ratings and
+                              feedback
+                            </p>
+                          </div>
+                        </div>
                       </li>
                       <li className="activelist">
-                        <div class="list-item-content" onClick={() => changeImage(2)}>
+                        <div
+                          class="list-item-content"
+                          onClick={() => changeImage(2)}
+                        >
                           <span>3</span>
                           <div>
                             <h4 className="media-heading">Start the Trip</h4>
-                            <p className="txttittle">Be at the pickup location with the child/children at the mentioned time, and the booked STS vehicle will arrive and the trip starts</p>
-                          </div></div>
+                            <p className="txttittle">
+                              Be at the pickup location with the child/children
+                              at the mentioned time, and the booked STS vehicle
+                              will arrive and the trip starts
+                            </p>
+                          </div>
+                        </div>
                       </li>
                       <li className="activelist">
-                        <div class="list-item-content" onClick={() => changeImage(3)}>
+                        <div
+                          class="list-item-content"
+                          onClick={() => changeImage(3)}
+                        >
                           <span>4</span>
                           <div>
-                            <h4 className="media-heading">Track in Real time</h4>
-                            <p className="txttittle">The app will show the vehicle location in real-time. You can monitor or check it when you want to.</p>
-                          </div></div>
+                            <h4 className="media-heading">
+                              Track in Real time
+                            </h4>
+                            <p className="txttittle">
+                              The app will show the vehicle location in
+                              real-time. You can monitor or check it when you
+                              want to.
+                            </p>
+                          </div>
+                        </div>
                       </li>
                       <li className="activelist">
-                        <div class="list-item-content" onClick={() => changeImage(4)}>
+                        <div
+                          class="list-item-content"
+                          onClick={() => changeImage(4)}
+                        >
                           <span>5</span>
                           <div>
                             <h4 className="media-heading">Safe Arrival</h4>
-                            <p className="txttittle">Upon safe arrival, the STS app will notify you, and you can check the real-time drop-off location of your child</p>
-                          </div></div>
+                            <p className="txttittle">
+                              Upon safe arrival, the STS app will notify you,
+                              and you can check the real-time drop-off location
+                              of your child
+                            </p>
+                          </div>
+                        </div>
                       </li>
                     </ol>
                   </div>
@@ -348,21 +401,17 @@ export default function index() {
                   <div className="hd-borde"></div>
                 </div>
               </div>
-              <div className="col-sm-6">
-                {/* First Column with Background Image */}
-                <div className="box pdgbtm0 mngbtm0">
-                  <div className="col-sm-10 col-sm-offset-1 ">
-
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6">
+           
+              <div className="col-sm-12 text-center">
                 {/* Second Column with List */}
-                <div className=" pdgbtm0 mngbtm0">
-                  <div className="col-sm-10">
+                <div className="pdgbtm0 mngbtm0">
+                  <div className="col-sm-12">
                     <div className="mobrow">
                       <div className="activelist">
-                        <div className="list-item-content d-flex align-items-center justify-content-center" onClick={() => changeImage(0)}> 
+                        <div
+                          className="list-item-content d-flex align-items-center justify-content-center"
+                          onClick={() => changeImage(0)}
+                        >
                           <span>1</span>
                         </div>
                       </div>
@@ -370,7 +419,10 @@ export default function index() {
                         <i className="fa fa-arrow-right"></i>
                       </div>
                       <div className="activelist">
-                        <div className="list-item-content d-flex align-items-center justify-content-center" onClick={() => changeImage(1)}>
+                        <div
+                          className="list-item-content d-flex align-items-center justify-content-center"
+                          onClick={() => changeImage(1)}
+                        >
                           <span>2</span>
                         </div>
                       </div>
@@ -378,7 +430,10 @@ export default function index() {
                         <i className="fa fa-arrow-right"></i>
                       </div>
                       <div className="activelist">
-                        <div className="list-item-content d-flex align-items-center justify-content-center" onClick={() => changeImage(2)}>
+                        <div
+                          className="list-item-content d-flex align-items-center justify-content-center"
+                          onClick={() => changeImage(2)}
+                        >
                           <span>3</span>
                         </div>
                       </div>
@@ -386,7 +441,10 @@ export default function index() {
                         <i className="fa fa-arrow-right"></i>
                       </div>
                       <div className="activelist">
-                        <div className="list-item-content d-flex align-items-center justify-content-center" onClick={() => changeImage(3)}>
+                        <div
+                          className="list-item-content d-flex align-items-center justify-content-center"
+                          onClick={() => changeImage(3)}
+                        >
                           <span>4</span>
                         </div>
                       </div>
@@ -394,7 +452,10 @@ export default function index() {
                         <i className="fa fa-arrow-right"></i>
                       </div>
                       <div className="activelist">
-                        <div className="list-item-content d-flex align-items-center justify-content-center" onClick={() => changeImage(4)}>
+                        <div
+                          className="list-item-content d-flex align-items-center justify-content-center"
+                          onClick={() => changeImage(4)}
+                        >
                           <span>5</span>
                         </div>
                       </div>
@@ -402,19 +463,24 @@ export default function index() {
 
                     <div>
                       <h4 className="media-headingmob">Easy Booking</h4>
-                      <p className="txttittlemob">Find a vehicle and book in a couple of taps by entering your pick-up and drop-off locations. You would also see the estimated trip fare</p>
+                      <p className="txttittlemob">
+                        Find a vehicle and book in a couple of taps by entering
+                        your pick-up and drop-off locations. You would also see
+                        the estimated trip fare
+                      </p>
                     </div>
 
                     <div className="img-responsive" id="backgroundImage">
                       <div className="img-container">
-                      <img src={images[currentImageIndex]}   className="innerimg" />
+                        <img
+                          src={images[currentImageIndex]}
+                          className="innerimg"
+                        />
                       </div>
-
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
@@ -450,12 +516,12 @@ export default function index() {
           <div className="col-sm-12"> 
             <div className="qrcode-wrapmob">
 
-              <div className="qrcodemob row">
+              <div className="qrcodemob">
                 <span className="spantxt">Scan QR Code</span>
                 <img className="imgqrmob" src="/Images/pax_sg.jpg" alt="QR Code" />
               </div>
 
-              <div className="app-btn">
+              <div className="app-btn text-center">
                 <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
                 <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
               </div>
@@ -492,11 +558,13 @@ export default function index() {
                             <a href="/blogs/new-blog/">new blog</a>
                           </h2>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam...
                           </p>
                           <div className="text-center">
                             <a href="/blogs/new-blog/">
-                              Read more<i className="fa fa-angle-double-right"></i>
+                              Read more
+                              <i className="fa fa-angle-double-right"></i>
                             </a>
                           </div>
                         </div>
@@ -508,9 +576,6 @@ export default function index() {
             </div>
           </section>
         </section>
-
-
-
       </div>
     </>
   );
