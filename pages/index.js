@@ -559,14 +559,14 @@ export default function index() {
                       </div>
 
                       <div className="app-btn text-center">
-                        <a href="#">
+                        <a href="https://apps.apple.com/in/app/parentapp-trackschoolbus/id1111564743">
                           <img
                             className="appimg"
                             src="/Images/app-store.png"
                             alt="App Store"
                           />
                         </a>
-                        <a href="#">
+                        <a href="https://play.google.com/store/apps/details?id=com.trackschoolbus.parent&hl=en_IN&gl=US">
                           <img
                             className="appimg"
                             src="/Images/google-play.png"
