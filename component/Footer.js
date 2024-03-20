@@ -1,8 +1,8 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 import Head from "next/head";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaLink, FaLinkedinIn } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
-import { FaGooglePlusG } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -96,27 +96,27 @@ export default function Footer() {
             <div className="row">
               <div className="col-sm-8 txt-cntr">
                 <p className="copy">
-                  Copyright 2017 School Transport Services. All Rights Reserved.
+                  Copyright 2024 School Transport Services. All Rights Reserved.
                 </p>
               </div>
 
               <div class="col-sm-4 icon-cntr">
                 <ul>
-                  <a href="#">
+                  <Link href="https://www.facebook.com/trackschoolbusTrackingSoftwareCompany/">
                     <i>
                       <FaFacebookF className="icon-style" />
                     </i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FTrackschoolbus">
                     <i>
                       <CiTwitter className="icon-style" />
                     </i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link href="https://www.linkedin.com/showcase/school-bus-tracker/">
                     <i>
-                      <FaGooglePlusG className="icon-style" />
+                      <FaLinkedinIn className="icon-style" />
                     </i>
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>

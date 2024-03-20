@@ -4,18 +4,15 @@ import { Carousel } from "react-bootstrap";
 // import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-
 export default function index() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Define an array of image URLs
   const images = [
     "/Images/bg1.jpg",
-    "Images/bg2.jpg",
+    "/Images/bg2.jpg",
     "/Images/bg3.jpg",
-    "Images/bg2.jpg",
+    "/Images/bg2.jpg",
     "/Images/bg1.jpg",
-    // Add more image URLs as needed
   ];
 
   // Function to handle changing the image
@@ -53,19 +50,20 @@ export default function index() {
 
       <div>
         <section className="">
-         
-            <div className="row">
-
-          <div className="carouselcontainer">
-         
-            <Carousel indicators={false} prevIcon={<PrevButton />} nextIcon={<NextButton />}>
-              <Carousel.Item interval={10000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgone.jpg"
-                    alt="bg1"
-                  />
+          <div className="row">
+            <div className="carouselcontainer">
+              <Carousel
+                indicators={false}
+                prevIcon={<PrevButton />}
+                nextIcon={<NextButton />}
+              >
+                <Carousel.Item interval={10000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgone.jpg"
+                      alt="bg1"
+                    />
 
                     <Carousel.Caption className="carouseltitle">
                       <div className="container">
@@ -75,22 +73,21 @@ export default function index() {
                               Start Earning with School Transport Services!
                             </h2>
                             <p className="txt">
-                              {" "}
                               Private cab owners can list as a driver with
                               School Transport services and start earning for
                               each safe ride you make.
                             </p>
 
-                            <a className="btn btn-primary btn-lg" href="">
+                            <a
+                              className="btn btn-primary btn-lg"
+                              href="/about-us"
+                            >
                               Read More
                             </a>
                           </div>
                         </div>
                       </div>
                     </Carousel.Caption>
-                    {/* <div id="progressBar" className="progress">
-      <div id="bar" className="progress-bar bg-success" style={{ width: '57.7143%' }}></div>
-    </div> */}
                   </div>
                 </Carousel.Item>
 
@@ -102,50 +99,69 @@ export default function index() {
                       alt="bg2"
                     />
 
-                  <Carousel.Caption className=" carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">Child Transportation Made Simple</h2>
-                          <p className="txt"> Is transporting your child to specific destinations safely a major concern for you? If yes, worry no more!</p>
-                          <p className="txt">School Transport Services provides you a convenient mobile app solution</p>
+                    <Carousel.Caption className=" carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Child Transportation Made Simple
+                            </h2>
+                            <p className="txt">
+                              Is transporting your child to specific
+                              destinations safely a major concern for you? If
+                              yes, worry no more!
+                            </p>
+                            <p className="txt">
+                              School Transport Services provides you a
+                              convenient mobile app solution
+                            </p>
 
-
-                          <a className="btn btn-primary btn-lg" href="">Read More</a>
+                            <a
+                              className="btn btn-primary btn-lg"
+                              href="/about-us"
+                            >
+                              Read More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item interval={115000}>
-                <div className="carousel-item-content">
-                  <img
-                    className="carosalhome"
-                    src="/Images/bgthree.jpg"
-                    alt="bg3"
-                  />
-                  <Carousel.Caption className="carouseltitle">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-sm-8 text-start">
-                          <h2 className="titile">Lend a helping hand to Fellow Parents!</h2>
-                          <p className="txt"> Carpooling with fellow parents can be a great way to ensure your child is safe. It not only ensures safety,
-                            but can also gain a friend for you.</p>
+                    </Carousel.Caption>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item interval={115000}>
+                  <div className="carousel-item-content">
+                    <img
+                      className="carosalhome"
+                      src="/Images/bgthree.jpg"
+                      alt="bg3"
+                    />
+                    <Carousel.Caption className="carouseltitle">
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-sm-8 text-start">
+                            <h2 className="titile">
+                              Lend a helping hand to Fellow Parents!
+                            </h2>
+                            <p className="txt">
+                              Carpooling with fellow parents can be a great way
+                              to ensure your child is safe. It not only ensures
+                              safety, but can also gain a friend for you.
+                            </p>
 
-                          <a className="btn btn-primary btn-lg" href="">Learn More</a>
+                            <a className="btn btn-primary btn-lg" href="">
+                              Learn More
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Carousel.Caption>
-                </div>
-              </Carousel.Item>
-
-            </Carousel>
-            <div className="greenButton"></div>
-
+                    </Carousel.Caption>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <div className="greenButton"></div>
+            </div>
           </div>
-          </div></section>
+        </section>
         <section className="sectiontwo">
           <div className="container">
             <div className="row">
@@ -268,7 +284,7 @@ export default function index() {
             </div>
           </div>
         </section>
-
+        {/*Desktop*/}
         <section className="secfour mob-hide">
           <div className="container">
             <div className="row">
@@ -278,120 +294,120 @@ export default function index() {
                   <div className="hd-borde"></div>
                 </div>
               </div>
-              <div className="col-sm-6">
-                {/* First Column with Background Image */}
-                <div className=" pdgbtm0 mngbtm0">
-                  <div className="col-sm-10 col-sm-offset-1 ">
-                    <div className="img-responsive" id="backgroundImage">
-                      <div className="img-container">
-                        {/* <img src="/Images/bg1.jpg" alt="inner" className="innerimg" id="mainImage" /> */}
-                        <img
-                          src={images[currentImageIndex]}
-                          className="innerimg"
-                        />
-                      </div>
-                    </div>
+              <div className="col-lg-12 row">
+                <div className="col-lg-6">
+                  <div className="col-md-12">
+                    <div
+                      className="img-responsive"
+                      id="backgroundImage"
+                      style={{
+                        backgroundImage: `url(${images[currentImageIndex]})`,
+                      }}
+                    ></div>
+                    <div className="second-background-image"></div>
                   </div>
                 </div>
-              </div>
-              <div className="col-sm-6">
-                {/* Second Column with List */}
-                <div className="box pdgbtm0 mngbtm0">
-                  <div className="col-sm-10 ">
-                    <ol className="orderlist">
-                      <li className="activelist">
-                        <div
-                          class="list-item-content"
-                          onClick={() => changeImage(0)}
-                        >
-                          <span>1</span>
-                          <div>
-                            <h4 className="media-heading">Easy Booking</h4>
-                            <p className="txttittle">
-                              Find a vehicle and book in a couple of taps by
-                              entering your pick-up and drop-off locations. You
-                              would also see the estimated trip fare
-                            </p>
-                          </div>
-                        </div>
-                      </li>
 
-                      <li className="activelist">
-                        <div
-                          class="list-item-content"
-                          onClick={() => changeImage(1)}
-                        >
-                          <span>2</span>
-                          <div>
-                            <h4 className="media-heading">
-                              Choose your driver
-                            </h4>
-                            <p className="txttittle">
-                              The nearest drivers would be shown as a list, and
-                              you can choose from them by looking at ratings and
-                              feedback
-                            </p>
+                <div className="col-lg-6">
+                  {/* Second Column with List */}
+                  <div className="box pdgbtm0 mngbtm0">
+                    <div className="col-sm-10 ">
+                      <ol className="orderlist">
+                        <li className="activelist">
+                          <div
+                            class="list-item-content"
+                            onClick={() => changeImage(0)}
+                          >
+                            <span>1</span>
+                            <div>
+                              <h4 className="media-heading">Easy Booking</h4>
+                              <p className="txttittle">
+                                Find a vehicle and book in a couple of taps by
+                                entering your pick-up and drop-off locations.
+                                You would also see the estimated trip fare
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li className="activelist">
-                        <div
-                          class="list-item-content"
-                          onClick={() => changeImage(2)}
-                        >
-                          <span>3</span>
-                          <div>
-                            <h4 className="media-heading">Start the Trip</h4>
-                            <p className="txttittle">
-                              Be at the pickup location with the child/children
-                              at the mentioned time, and the booked STS vehicle
-                              will arrive and the trip starts
-                            </p>
+                        </li>
+
+                        <li className="activelist">
+                          <div
+                            class="list-item-content"
+                            onClick={() => changeImage(1)}
+                          >
+                            <span>2</span>
+                            <div>
+                              <h4 className="media-heading">
+                                Choose your driver
+                              </h4>
+                              <p className="txttittle">
+                                The nearest drivers would be shown as a list,
+                                and you can choose from them by looking at
+                                ratings and feedback
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li className="activelist">
-                        <div
-                          class="list-item-content"
-                          onClick={() => changeImage(3)}
-                        >
-                          <span>4</span>
-                          <div>
-                            <h4 className="media-heading">
-                              Track in Real time
-                            </h4>
-                            <p className="txttittle">
-                              The app will show the vehicle location in
-                              real-time. You can monitor or check it when you
-                              want to.
-                            </p>
+                        </li>
+                        <li className="activelist">
+                          <div
+                            class="list-item-content"
+                            onClick={() => changeImage(2)}
+                          >
+                            <span>3</span>
+                            <div>
+                              <h4 className="media-heading">Start the Trip</h4>
+                              <p className="txttittle">
+                                Be at the pickup location with the
+                                child/children at the mentioned time, and the
+                                booked STS vehicle will arrive and the trip
+                                starts
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li className="activelist">
-                        <div
-                          class="list-item-content"
-                          onClick={() => changeImage(4)}
-                        >
-                          <span>5</span>
-                          <div>
-                            <h4 className="media-heading">Safe Arrival</h4>
-                            <p className="txttittle">
-                              Upon safe arrival, the STS app will notify you,
-                              and you can check the real-time drop-off location
-                              of your child
-                            </p>
+                        </li>
+                        <li className="activelist">
+                          <div
+                            class="list-item-content"
+                            onClick={() => changeImage(3)}
+                          >
+                            <span>4</span>
+                            <div>
+                              <h4 className="media-heading">
+                                Track in Real time
+                              </h4>
+                              <p className="txttittle">
+                                The app will show the vehicle location in
+                                real-time. You can monitor or check it when you
+                                want to.
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                    </ol>
+                        </li>
+                        <li className="activelist">
+                          <div
+                            class="list-item-content"
+                            onClick={() => changeImage(4)}
+                          >
+                            <span>5</span>
+                            <div>
+                              <h4 className="media-heading">Safe Arrival</h4>
+                              <p className="txttittle">
+                                Upon safe arrival, the STS app will notify you,
+                                and you can check the real-time drop-off
+                                location of your child
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        {/*Mobile*/}
         <section className="secfourmob">
           <div className="container">
             <div className="row">
@@ -401,7 +417,7 @@ export default function index() {
                   <div className="hd-borde"></div>
                 </div>
               </div>
-           
+
               <div className="col-sm-12 text-center">
                 {/* Second Column with List */}
                 <div className="pdgbtm0 mngbtm0">
@@ -470,13 +486,15 @@ export default function index() {
                       </p>
                     </div>
 
-                    <div className="img-responsive" id="backgroundImage">
-                      <div className="img-container">
-                        <img
-                          src={images[currentImageIndex]}
-                          className="innerimg"
-                        />
-                      </div>
+                    <div className="col-sm-12 text-center">
+                      <div
+                        className="img-responsive"
+                        id="backgroundImage"
+                        style={{
+                          backgroundImage: `url(${images[currentImageIndex]})`,
+                        }}
+                      ></div>
+                      <div className="img-responsive second-background-image"></div>
                     </div>
                   </div>
                 </div>
@@ -486,55 +504,83 @@ export default function index() {
         </section>
 
         <section className="sectionfive drk-bg climpek-pattern ">
-  <div className="container">
-    <div className="row">
-      <article>
-        <div className="heading text-center">
-          <div className="col-sm-12">
-            <h2 className="clrwhite">Download App Section with QR code</h2>
-          </div>
-        </div>
+          <div className="container">
+            <div className="row">
+              <article>
+                <div className="heading text-center">
+                  <div className="col-sm-12">
+                    <h2 className="clrwhite">
+                      Download App Section with QR code
+                    </h2>
+                  </div>
+                </div>
 
-        <div className="main">
-          <div className="col-sm-12"> 
-            <div className="qrcode-wrap">
+                <div className="main">
+                  <div className="col-sm-12">
+                    <div className="qrcode-wrap">
+                      <div className="qrcode row">
+                        <span className="spantxt">Scan QR Code</span>
+                        <img
+                          className="imgqr"
+                          src="/Images/pax_sg.jpg"
+                          alt="QR Code"
+                        />
+                      </div>
 
-              <div className="qrcode row">
-                <span className="spantxt">Scan QR Code</span>
-                <img className="imgqr" src="/Images/pax_sg.jpg" alt="QR Code" />
-              </div>
+                      <div className="app-btn">
+                        <a href="https://apps.apple.com/in/app/parentapp-trackschoolbus/id1111564743">
+                          <img
+                            className="appimg"
+                            src="/Images/app-store.png"
+                            alt="App Store"
+                          />
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.trackschoolbus.parent&hl=en_IN&gl=US">
+                          <img
+                            className="appimg"
+                            src="/Images/google-play.png"
+                            alt="Google Play"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mobmain">
+                  <div className="col-sm-12">
+                    <div className="qrcode-wrapmob">
+                      <div className="qrcodemob">
+                        <span className="spantxt">Scan QR Code</span>
+                        <img
+                          className="imgqrmob"
+                          src="/Images/pax_sg.jpg"
+                          alt="QR Code"
+                        />
+                      </div>
 
-              <div className="app-btn">
-                <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
-                <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
-              </div>
-
+                      <div className="app-btn text-center">
+                        <a href="#">
+                          <img
+                            className="appimg"
+                            src="/Images/app-store.png"
+                            alt="App Store"
+                          />
+                        </a>
+                        <a href="#">
+                          <img
+                            className="appimg"
+                            src="/Images/google-play.png"
+                            alt="Google Play"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-        <div className="mobmain">
-          <div className="col-sm-12"> 
-            <div className="qrcode-wrapmob">
-
-              <div className="qrcodemob">
-                <span className="spantxt">Scan QR Code</span>
-                <img className="imgqrmob" src="/Images/pax_sg.jpg" alt="QR Code" />
-              </div>
-
-              <div className="app-btn text-center">
-                <a href="#"><img className="appimg" src="/Images/app-store.png" alt="App Store" /></a>
-                <a href="#"><img className="appimg" src="/Images/google-play.png" alt="Google Play" /></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
+        </section>
 
         <section className="">
           <section className="blog-block01 fabric-bg-sx fabric-squares-patten-img-sx">
@@ -576,6 +622,136 @@ export default function index() {
             </div>
           </section>
         </section>
+        <section className="contactmain">
+          <div className="container">
+            <div className="row">
+              <article>
+                <div className="contactbox row">
+                  <div className="col-xs-12 col-sm-5">
+                    <h2 className="brdrnone contactboxh2 ">
+                      <strong>Get In</strong> Touch
+                    </h2>
+                    <div className="row">
+                      <div className="col-md-12 col-xs-12">
+                        <div className="info-block contacttext">
+                          <p className="contacttxt">
+                            <strong>Address:</strong>
+                          </p>
+                          <div className="trxt">
+                            <p className="contacttxt">
+                              Edsys Towers, Kamaleswaram, Trivandrum – 695009
+                            </p>
+                            <p>India</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-xs-12">
+                      <div className="info-block mb-2">
+                        <p className="contacttxt">
+                          <strong>Phone:</strong>
+                        </p>
+                        <div className="trxt">+91 81 1386 0000</div>
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-xs-12">
+                      <div className="info-block">
+                        <div className="trxt"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xs-12 col-sm-7">
+                    <div className="page-block-cont-info ">
+                      <div className="default-form text-center">
+                        <form id="form_subt">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control contactinput"
+                              placeholder="Name"
+                              id="Inputname"
+                              name="your_name"
+                              required=""
+                            />
+                          </div>
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control contactinput"
+                              placeholder="Email"
+                              name="your_email"
+                              required=""
+                            />
+                          </div>
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control contactinput"
+                              placeholder="Subject"
+                              name="your_sub"
+                              required=""
+                            />
+                          </div>
+                          <div className="form-group">
+                            <textarea
+                              className="form-control contactinput"
+                              rows="6"
+                              placeholder="Message"
+                              name="your_message"
+                            ></textarea>
+                          </div>
+                          <span
+                            id="form_error"
+                            style={{
+                              color: "#ff940f",
+                              float: "left",
+                              width: "100%",
+                              margin: "5px 0",
+                              fontsize: "17px",
+                              textalign: "center",
+                            }}
+                          ></span>
+                          <span
+                            id="form_success"
+                            style={{
+                              color: "#478e43",
+                              float: "left",
+                              width: "100%",
+                              margin: "5px 0",
+                              fontsize: "17px",
+                              textalign: "center",
+                            }}
+                          ></span>
+
+                          <div
+                            className="form-group text-start"
+                            style={{ position: "relative" }}
+                          >
+                            <input
+                              type="hidden"
+                              id="current_page"
+                              value="Contact Us"
+                            />
+                            <input
+                              type="submit"
+                              value="SUBMIT"
+                              className="btncontact"
+                              id="user_submit"
+                            />
+                            <div
+                              className="loader"
+                              style={{ padding: "70px" }}
+                            ></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
@@ -584,14 +760,12 @@ const PrevButton = (props) => (
   <button className="custom-carousel-button prev" onClick={props.onClick}>
     <i className="fa fa-angle-left icon"></i>
     {/* <MdKeyboardArrowLeft className="icon"/> */}
-
   </button>
 );
 
 const NextButton = (props) => (
   <button className="custom-carousel-button next" onClick={props.onClick}>
     {/* <i className="fa fa-angle-right icon"></i> */}
-    <MdOutlineKeyboardArrowRight  className="icon"/>
-
+    <MdOutlineKeyboardArrowRight className="icon" />
   </button>
 );

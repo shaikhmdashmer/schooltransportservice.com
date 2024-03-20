@@ -33,6 +33,14 @@ body {
   /* font-family: "Roboto Flex", sans-serif;
   font-family: "Public Sans", sans-serif; */
 }
+/*---Layout---*/
+.scrollview {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  scrollbar-width: 30px;
+  scrollbar-color: #c6c3c3 var(--whiteColor);
+}
 
 /* Header Styles */
 .headermain {
@@ -50,6 +58,9 @@ body {
 
 .headermain .brandLogo a img {
   background-color: transparent;
+}
+.material-icons {
+  cursor: pointer;
 }
 
 .imgclss {

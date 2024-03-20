@@ -54,12 +54,9 @@
   transform: translate(-50%, -50%); /* Center horizontally */
 }
 
- 
-
 .custom-carousel-button.next {
   right: 0;
   transform: translate(50%, -50%); /* Center horizontally */
- 
 }
 .custom-carousel-button.prev .icon {
   margin-left: 25px;
@@ -80,8 +77,8 @@
   font-family: var(--font-family);
   margin-bottom: 17px;
   /* font-weight: bold; */
-font-family: var(--font-family);
-margin-bottom: 17px;
+  font-family: var(--font-family);
+  margin-bottom: 17px;
 }
 .txt {
   font-size: 21px;
@@ -133,12 +130,11 @@ margin-bottom: 17px;
   /* background-color: #24890d; */
   display: flex;
   align-items: center;
-  position:absolute;
-  top:50px;
+  position: absolute;
+  top: 50px;
   /* background-color: #24890d; */
   display: flex;
   align-items: center;
-   
 }
 .greenButton {
   position: absolute;
@@ -150,7 +146,7 @@ margin-bottom: 17px;
 
 /* Add the blue line as a pseudo-element */
 .greenButton::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   height: 5px; /* Adjust thickness of the blue line */
@@ -170,10 +166,6 @@ margin-bottom: 17px;
     width: 100%; /* Expand the blue line to full width */
   }
 }
-
-
-
-
 
 /* ------section2--------- */
 .sectiontwo {
@@ -293,15 +285,36 @@ margin-bottom: 17px;
 /* FourBoxComponent.css */
 
 .img-responsive {
-  background-image: url("../public/Images/mob_bg.png");
-  background-position: top center;
-  background-size: contain;
-  background-clip: content-box;
+  background-position: 50%;
   background-repeat: no-repeat;
-  width: 100%; /* Make the background image responsive */
-  height: 500px; /* Ensure aspect ratio is maintained */
-  position: relative; /* Ensure relative positioning */
-  z-index: 9;
+  background-size: cover;
+  /* position: absolute; */
+  display: block !important;
+  width: 200px !important;
+  height: 390px;
+  transition: opacity ease-in-out 500ms;
+  z-index: 2;
+  margin-left: 180px;
+  margin-top: 60px;
+}
+.second-background-image {
+  background-image: url("../public/Images/mob_bg.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block !important;
+  width: 370px !important;
+  height: 550px;
+  transition: opacity ease-in-out 500ms;
+  z-index: 2;
+  margin-top: -420px;
+  margin-left: 80px;
+}
+
+.img-container {
+  /* You might need to adjust the height and width properties according to your design */
+  height: 100%;
+  width: 100%;
 }
 
 .innerimg {
@@ -389,13 +402,10 @@ margin-bottom: 17px;
   font-family: var(--font-family);
 }
 @media screen and (min-width: 992px) {
-
 }
 @media screen and (max-width: 992px) {
-
 }
 @media screen and (max-width: 767px) {
-  
 }
 /* -----section5-------- */
 
@@ -498,7 +508,6 @@ margin-bottom: 17px;
   text-decoration: none;
 }
 
-
 /* contact-us-style */
 .sts-wrap-content {
   float: left;
@@ -556,10 +565,8 @@ margin-bottom: 17px;
   box-shadow: none;
 }
 
-
 .contactinput:focus {
   box-shadow: none;
-
 }
 
 .btncontact {
@@ -585,7 +592,6 @@ margin-bottom: 17px;
   }
 }
 @media screen and (max-width: 767px) {
- 
   .mobmain .col-sm-12 {
     display: flex;
     flex-direction: column;
@@ -597,15 +603,13 @@ margin-bottom: 17px;
     align-items: center;
     display: flex;
     flex-direction: column;
-
   }
   .qrcode-wrapmob {
-   
-  padding: 20px 30px;
+    padding: 20px 30px;
     justify-content: center;
     align-items: center;
   }
- 
+
   .qrcode-wrapmob:after {
     content: "or";
     width: 33px;
@@ -613,13 +617,13 @@ margin-bottom: 17px;
     display: block;
     border-radius: 50%;
     background-color: #fff;
-    font-size: 1.000em;
+    font-size: 1em;
     text-align: center;
     line-height: 33px;
     position: absolute;
     left: 47%;
     cursor: pointer;
-   margin-top: 10;
+    margin-top: 10;
     color: #000;
   }
   .qrcodemob .imgqrmob {
@@ -628,13 +632,11 @@ margin-bottom: 17px;
     margin-bottom: 10px;
   }
   .app-btn .appimg {
-    
     width: 120px; /* Adjust width as needed */
     height: 45px;
-
   }
   .app-btn {
-    padding-top:30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -646,15 +648,13 @@ margin-bottom: 17px;
   .qrcodemob .spantxt {
     margin-bottom: 10px;
     float: left;
-  /* font-weight: bold; */
-  color: var(--whiteColor);
-  font-size: 20px;
-  margin: 0 0 10px 0;
-  font-family: var(--font-family);
+    /* font-weight: bold; */
+    color: var(--whiteColor);
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-family: var(--font-family);
   }
- }
-
-
+}
 
 @media (max-width: 767px) {
   .carouseltitle {
@@ -674,60 +674,88 @@ margin-bottom: 17px;
 }
 /* Media query for medium devices (e.g., tablets) */
 @media (min-width: 576px) and (max-width: 768px) {
- 
   .carosalhome {
     width: 100%;
     height: 450px;
   }
- 
-    /* Adjust column layout for smaller screens */
-    .columsection{
-      width: 100%;
-      margin-bottom: 20px; /* Add space between columns */
-    }
-  
-    .columsectiontwo {
-      width: 100%;
-    }
-    .media-heading{
-      font-size: 18px;
-    }
-    .txttittle{
-      font-size: 16px;
-    }
-    .secfourmob{
-      display: none;
-    }
-    .main{
-      display: none;
-    }
-   
+
+  /* Adjust column layout for smaller screens */
+  .columsection {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between columns */
+  }
+
+  .columsectiontwo {
+    width: 100%;
+  }
+  .media-heading {
+    font-size: 18px;
+  }
+  .txttittle {
+    font-size: 16px;
+  }
+  .secfour {
+    display: none;
+  }
+  .secfourmob {
+    display: flex;
+  }
+  .main {
+    display: none;
+  }
 }
 
 /* Media query for large devices (e.g., desktops) */
 @media (min-width: 992px) {
-  .secfourmob{
+  .secfourmob {
     display: none;
   }
-  .mobmain{
+  .mobmain {
     display: none;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
-  .secfourmob{
+  .secfour {
+    display: flex;
+  }
+  .secfourmob {
     display: none;
   }
-  .mobmain{
+  .mobmain {
     display: none;
   }
-
 }
 @media (max-width: 576px) {
-  .secfour{
+  .secfour {
     display: none;
   }
-  main{
-    display: none;
+  .secfourmob {
+    display: flex;
   }
-
+  .img-responsive {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    display: block !important;
+    width: 180px !important;
+    height: 375px;
+    transition: opacity ease-in-out 500ms;
+    z-index: 2;
+    margin-left: 175px;
+    margin-top: 60px;
+  }
+  .second-background-image {
+    background-image: url("../public/Images/mob_bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block !important;
+    width: 340px !important;
+    height: 480px;
+    transition: opacity ease-in-out 500ms;
+    z-index: 2;
+    margin-top: -390px;
+    margin-left: 80px;
+  }
 }
