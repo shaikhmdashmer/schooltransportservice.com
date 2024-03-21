@@ -486,7 +486,7 @@ export default function index() {
                       </p>
                     </div>
 
-                    <div className="col-sm-12 text-center">
+                    <div className="col-sm-12">
                       <div
                         className="img-responsive"
                         id="backgroundImage"
@@ -494,7 +494,7 @@ export default function index() {
                           backgroundImage: `url(${images[currentImageIndex]})`,
                         }}
                       ></div>
-                      <div className="img-responsive second-background-image"></div>
+                      <div className="second-background-image"></div>
                     </div>
                   </div>
                 </div>

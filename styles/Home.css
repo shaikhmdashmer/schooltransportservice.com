@@ -726,6 +726,9 @@
   }
 }
 @media (max-width: 576px) {
+  .main {
+    display: none;
+  }
   .secfour {
     display: none;
   }
@@ -742,7 +745,7 @@
     height: 375px;
     transition: opacity ease-in-out 500ms;
     z-index: 2;
-    margin-left: 175px;
+    margin-left: 90px;
     margin-top: 60px;
   }
   .second-background-image {
@@ -756,6 +759,6 @@
     transition: opacity ease-in-out 500ms;
     z-index: 2;
     margin-top: -390px;
-    margin-left: 80px;
+    margin-left: -10px;
   }
 }

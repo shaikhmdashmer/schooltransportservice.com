@@ -20,13 +20,6 @@ p {
   font-family: "Inter"; /* Use Inter font family with fallback to sans-serif */
   font-size: 30px;
 }
-* {
-  scroll-behavior: smooth;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
 
 body {
   overflow-x: hidden;
@@ -37,7 +30,6 @@ body {
 .scrollview {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 100vh;
   scrollbar-width: 30px;
   scrollbar-color: #c6c3c3 var(--whiteColor);
 }
