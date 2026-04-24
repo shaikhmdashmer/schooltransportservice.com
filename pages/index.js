@@ -1,12 +1,21 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
+import ReCAPTCHA from "react-google-recaptcha";
 // import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function index() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+// ✅ CAPTCHA STATE (Frontend Only)
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [captchaError, setCaptchaError] = useState("");
 
+  // ✅ Handle CAPTCHA change
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+    setCaptchaError("");
+  };
   const images = [
     "/Images/bg1.jpg",
     "/Images/bg2.jpg",
@@ -19,6 +28,24 @@ export default function index() {
   const changeImage = (index) => {
     setCurrentImageIndex(index);
   };
+
+  const handleSubmit = (e) => {
+  e.preventDefault(); // prevent page reload
+
+  // ✅ CAPTCHA VALIDATION (Frontend Only)
+  if (!captchaValue) {
+    setCaptchaError("Please verify that you are not a robot.");
+    return;
+  }
+
+  // If CAPTCHA is valid
+  console.log("Form submitted successfully!");
+
+  // 👉 You can now send form data to backend here
+
+  // Optional: reset captcha
+  setCaptchaValue(null);
+};
   return (
     <>
       <Head>
@@ -663,7 +690,7 @@ export default function index() {
                   <div className="col-xs-12 col-sm-7">
                     <div className="page-block-cont-info ">
                       <div className="default-form text-center">
-                        <form id="form_subt">
+                        <form id="form_subt" onSubmit={handleSubmit}>
                           <div className="form-group">
                             <input
                               type="text"
@@ -700,6 +727,28 @@ export default function index() {
                               name="your_message"
                             ></textarea>
                           </div>
+                          {/* ✅ GOOGLE reCAPTCHA v2 */}
+            <div className="form-group my-3 d-flex justify-content-start">
+              <ReCAPTCHA
+                sitekey="6LfLp64sAAAAAFEKuK4Xlclj4XdRR27s1YasyJ9z"
+                onChange={handleCaptchaChange}
+                theme="light"
+              />
+            </div>
+
+            {/* ✅ CAPTCHA ERROR MESSAGE */}
+            {captchaError && (
+              <p
+                style={{
+                  color: "red",
+                  fontSize: "12px",
+                  textAlign: "start",
+                  marginTop: "-10px",
+                }}
+              >
+                {captchaError}
+              </p>
+            )}
                           <span
                             id="form_error"
                             style={{
